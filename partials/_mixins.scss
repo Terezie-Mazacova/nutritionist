@@ -1,0 +1,11 @@
+@mixin h1 {
+    font-size: 3.625rem;
+}
+
+@mixin h2 {
+    font-size: 3rem;
+}
+
+@mixin h3($size) {
+    font-size: $size;
+}
