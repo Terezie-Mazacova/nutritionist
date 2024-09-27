@@ -9,6 +9,8 @@
 @import "partials/mixins";
 @import "partials/variables";
 
+@import "components/header";
+
 
 
 
@@ -22,4 +24,6 @@
 
 body {
     font-family: "Urbanist", sans-serif;
+    max-width: 120rem;
+    margin: 0 auto;
 }

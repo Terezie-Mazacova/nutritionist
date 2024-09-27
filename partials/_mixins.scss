@@ -1,3 +1,4 @@
+// == HEADING ==
 @mixin h1 {
     font-size: 3.625rem;
 }
@@ -8,4 +9,25 @@
 
 @mixin h3($size) {
     font-size: $size;
+}
+
+// == PARAGRAPHS ==
+@mixin text-medium-large {
+    font-size: 1.375rem;
+}
+
+@mixin text-large {
+    font-size: 1.25rem;
+}
+
+@mixin text-medium {
+    font-size: 1.125rem;
+}
+
+@mixin text-small {
+    font-size: 1rem;
+}
+
+@mixin text-xsmall {
+    font-size: .875rem;
 }
