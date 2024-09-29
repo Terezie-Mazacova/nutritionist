@@ -12,6 +12,10 @@
 }
 
 // == PARAGRAPHS ==
+@mixin text-xxlarge {
+    font-size: 1.75rem;
+}
+
 @mixin text-medium-large {
     font-size: 1.375rem;
 }
