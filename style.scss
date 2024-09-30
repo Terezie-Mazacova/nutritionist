@@ -10,6 +10,16 @@
 @import "partials/variables";
 
 @import "components/header";
+@import "components/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/team";
+@import "pages/process";
+@import "pages/pricing";
+@import "pages/blog";
+@import "pages/contactus";
+
 
 
 
@@ -26,4 +36,8 @@ body {
     font-family: "Urbanist", sans-serif;
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.container {
+    padding: 0 10.125rem;
 }
