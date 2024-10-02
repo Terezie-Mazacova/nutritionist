@@ -1,10 +1,16 @@
 // == HEADING ==
 @mixin h1 {
     font-size: 3.625rem;
+    color: $dark-green-15;
+    max-width: 600px;
+    font-weight: 700;
 }
 
 @mixin h2 {
     font-size: 3rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: $grey-15;
 }
 
 @mixin h3($size) {
