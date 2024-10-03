@@ -96,7 +96,7 @@
 
             .blogs-container {
                 margin-top: 2.5rem;
-                
+
                 .blogs-content {
                     margin-bottom: 1.875rem;
 
@@ -165,5 +165,26 @@
             }
         }
         
+    }
+}
+
+// == SECTION OUR TESTIMONIALS ==
+.section-our-testimonials {
+    margin-top: 9.375rem;
+
+    .testimonials-header {
+        text-align: center;
+
+        h2 {
+            @include h2;
+            margin-bottom: .625rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-20;
+        }
     }
 }
