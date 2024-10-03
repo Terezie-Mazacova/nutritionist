@@ -1,5 +1,71 @@
 
 .slide-content {
-    padding: 2.5rem;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $green-90;
+    border-radius: 12px;
+
+    .quote-content {
+        padding: 2.5rem;
+        .bi-quote {
+            color: $dark-green-30;
+            font-size: 40px;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-20;
+            margin-top: 3.125rem;
+        }
+    }
+
+    .slide-author-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 1.875rem 2.5rem;
+        background-color: $green-95;
+        border-top: 1px solid $green-90;
+
+        .slide-author-name {
+            @include text-medium;
+            font-weight: 600;
+            line-height: 150%;
+            color: $dark-green-15;
+        }
+    }
 }
+
+.splide__pagination {
+    bottom: -60px;
+}
+
+.splide__pagination__page {
+    background-color: $green-85 !important;
+}
+
+.splide__pagination__page.is-active {
+    background: $dark-green-30 !important;
+    transform: none;
+}
+
+.splide__arrow {
+    top: 112.5% !important;
+    background-color: $green-95;
+    border: 1px solid $green-90;
+    border-radius: .5rem;
+    width: 58px;
+    height: 58px;
+    padding: 12px;
+}
+
+.splide__arrow--next {
+    right: 43%;
+}
+
+.splide__arrow--prev {
+    left: 43%;
+}
+

@@ -174,8 +174,69 @@
 }
 
 .slide-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #EEF8D3;
+  border-radius: 12px;
+}
+.slide-content .quote-content {
   padding: 2.5rem;
-  border: 1px solid red;
+}
+.slide-content .quote-content .bi-quote {
+  color: #346454;
+  font-size: 40px;
+}
+.slide-content .quote-content p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+  margin-top: 3.125rem;
+}
+.slide-content .slide-author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1.875rem 2.5rem;
+  background-color: #F6FBE9;
+  border-top: 1px solid #EEF8D3;
+}
+.slide-content .slide-author-info .slide-author-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #1A3129;
+}
+
+.splide__pagination {
+  bottom: -60px;
+}
+
+.splide__pagination__page {
+  background-color: #E5F5BD !important;
+}
+
+.splide__pagination__page.is-active {
+  background: #346454 !important;
+  transform: none;
+}
+
+.splide__arrow {
+  top: 112.5% !important;
+  background-color: #F6FBE9;
+  border: 1px solid #EEF8D3;
+  border-radius: 0.5rem;
+  width: 58px;
+  height: 58px;
+  padding: 12px;
+}
+
+.splide__arrow--next {
+  right: 43%;
+}
+
+.splide__arrow--prev {
+  left: 43%;
 }
 
 .section-features {
@@ -326,9 +387,11 @@
 
 .section-our-testimonials {
   margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
 }
 .section-our-testimonials .testimonials-header {
   text-align: center;
+  margin-bottom: 5rem;
 }
 .section-our-testimonials .testimonials-header h2 {
   font-size: 3rem;
@@ -354,6 +417,7 @@ body {
   font-family: "Urbanist", sans-serif;
   max-width: 120rem;
   margin: 0 auto;
+  background-color: #FAFDF2;
 }
 
 .container {
