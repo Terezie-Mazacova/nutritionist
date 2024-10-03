@@ -387,7 +387,6 @@
 
 .section-our-testimonials {
   margin-top: 9.375rem;
-  margin-bottom: 9.375rem;
 }
 .section-our-testimonials .testimonials-header {
   text-align: center;
@@ -401,6 +400,26 @@
   margin-bottom: 0.625rem;
 }
 .section-our-testimonials .testimonials-header p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+}
+
+.section-our-pricing {
+  margin-top: 9.375rem;
+}
+.section-our-pricing .pricing-header {
+  text-align: center;
+}
+.section-our-pricing .pricing-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.625rem;
+}
+.section-our-pricing .pricing-header p {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 150%;
