@@ -196,6 +196,7 @@
 
     .pricing-header {
         text-align: center;
+        margin-bottom: 5rem;
 
         h2 {
             @include h2;
@@ -209,4 +210,124 @@
             color: $grey-20;
         }
     }
+
+    .tabs-pricing {
+        
+        [data-tab-content] {
+            display: none;
+        }
+
+        .active[data-tab-content] {
+            display: block;
+        }
+
+        .tabs {
+            display: flex;
+            padding: .625rem;
+            justify-content: center;
+            border: 1px solid $green-80;
+            border-radius: .5rem;
+            max-width: 14.5625rem;
+            margin: 0 auto;
+            list-style-type: none;
+            cursor: pointer;
+
+            .tab {
+                padding: 10px 24px;
+                color: $gray-custom;
+                @include text-medium;
+                font-weight: 600;
+                line-height: 150%;
+
+                &.active {
+                    background-color: $dark-green-20;
+                    border-radius: .375rem;
+                    color: #fff;
+                }
+            }
+        }
+
+        .promo-text {
+            text-align: center;
+            margin-top: .875rem;
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-30;
+        }
+
+        .tabs-lists {
+            margin-top: 3.125rem;
+
+            .plans-wrapper {
+                display: flex;
+                gap: 1.875rem;
+
+                .plan-card {
+                    padding: 3.125rem;
+                    background-color: $green-95;
+                    border: 1px solid $green-90;
+                    border-radius: .75rem;
+
+                    .plan-header {
+                        margin-bottom: 2.5rem;
+
+                        h3 {
+                            @include h3(1.875rem);
+                            font-weight: 600;
+                            line-height: 150%;
+                            color: $grey-15;
+                            margin-bottom: .125rem
+                        }
+
+                        p {
+                            @include text-medium;
+                            font-weight: 500;
+                            line-height: 150%;
+                            color: $grey-30;
+                        }
+                    }
+
+                    .plan-description {
+                        @include text-medium;
+                        font-weight: 500;
+                        line-height: 150%;
+                        color: $grey-15;
+                        margin-bottom: 2.5rem;
+                    }
+                    
+                    .plan-price {
+                        display: flex;
+                        align-items: center;
+                        gap: .25rem;
+                        @include text-medium;
+                        font-weight: 500;
+                        line-height: 150%;
+                        color: $grey-20;
+                        margin-bottom: 2.0625rem;
+
+                        span {
+                            @include text-huge;
+                            font-weight: 700;
+                            line-height: 87.5%;
+                            color: $dark-green-25;
+                        }
+                    }
+
+                    .plan-btn {
+                        display: flex;
+                        justify-content: center;
+                        background-color: $green-70;
+                        padding: 1.125rem 2.5625rem;
+                        border-radius: .5rem;
+                        text-decoration: none;
+                        @include text-medium;
+                        font-weight: 600;
+                        color: $grey-15;
+                    }
+                }
+            }
+        }
+    }
 }
+
