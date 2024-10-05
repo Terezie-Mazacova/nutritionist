@@ -4,109 +4,116 @@
     background-color: $dark-green-15; //dark-green-15
     padding: 0 10.125rem;
 
-    .announcement-bar {
-        border-bottom: 1px solid $dark-green-20;
-
-        .announcement-inner {
-            display: flex;
-            justify-content: space-between;
-            margin: .875rem 0;
-            padding: 0 1.25rem;
-            background-color: $dark-green-20;
-            border: 1px solid $dark-green-25;
-            border-radius: .375rem;
-
-            .annoucement-item-left {
-                img {
-                    height: 100%;
-                }
-            }
-            
-            .announcement-content-text {
+    .header-container {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 162px;
+        width: 100%;
+        
+        .announcement-bar {
+            border-bottom: 1px solid $dark-green-20;
+    
+            .announcement-inner {
                 display: flex;
-                align-items: center;
-                padding: .625rem;
-                color: white;
-                cursor: pointer;
-                transition: transform 0.3s ease;
-
-                &:hover .bi-arrow-right {
-                    transform: translateX(3px);
+                justify-content: space-between;
+                margin: .875rem 0;
+                padding: 0 1.25rem;
+                background-color: $dark-green-20;
+                border: 1px solid $dark-green-25;
+                border-radius: .375rem;
+    
+                .annoucement-item-left {
+                    img {
+                        height: 100%;
+                    }
                 }
-
-                p {
-                    margin-left: .375rem;
-                    margin-right: 1.25rem;
-                    @include text-small;
-                    font-weight: 500;
-                }
-
-                .bi-arrow-right {
-                    font-size: 1.25rem;
+                
+                .announcement-content-text {
+                    display: flex;
+                    align-items: center;
+                    padding: .625rem;
+                    color: white;
+                    cursor: pointer;
                     transition: transform 0.3s ease;
+    
+                    &:hover .bi-arrow-right {
+                        transform: translateX(3px);
+                    }
+    
+                    p {
+                        margin-left: .375rem;
+                        margin-right: 1.25rem;
+                        @include text-small;
+                        font-weight: 500;
+                    }
+    
+                    .bi-arrow-right {
+                        font-size: 1.25rem;
+                        transition: transform 0.3s ease;
+                    }
                 }
-            }
-
-            .annoucement-item-right {
-                img {
-                    height: 100%;
+    
+                .annoucement-item-right {
+                    img {
+                        height: 100%;
+                    }
                 }
             }
         }
-    }
-
-    // == LOGO AND NAV ==
-    .logo-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1.25rem 0;
-
-        .nav-button-wrapper {
+    
+        // == LOGO AND NAV ==
+        .logo-nav {
             display: flex;
-            gap: 2.5rem;
-
-            nav {
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.25rem 0;
+    
+            .nav-button-wrapper {
                 display: flex;
-                align-items: center;
-                
-                ul {
+                gap: 2.5rem;
+    
+                nav {
                     display: flex;
-                    gap: 1.625rem;
+                    align-items: center;
                     
+                    ul {
+                        display: flex;
+                        gap: 1.625rem;
+                        
+        
+                        li {
+                            list-style-type: none;
+        
+                            a {
+                                text-decoration: none;
+                                color: $green-97;
+                                @include text-medium;
+                                font-weight: 600;
+                                line-height: 150%;
     
-                    li {
-                        list-style-type: none;
-    
-                        a {
-                            text-decoration: none;
-                            color: $green-97;
-                            @include text-medium;
-                            font-weight: 600;
-                            line-height: 150%;
-
-                            &:hover {
-                                color: $green-70;
+                                &:hover {
+                                    color: $green-70;
+                                }
                             }
                         }
                     }
                 }
-            }
-
-            button {
-                border: none;
-                border-radius: .5rem;
-                padding: .875rem 1.5rem;
-                background-color: $green-70;
-                @include text-medium;
-                font-weight: 600;
-                color: $grey-15;
-                line-height: 150%;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: $green-80;
+    
+                button {
+                    border: none;
+                    border-radius: .5rem;
+                    padding: .875rem 1.5rem;
+                    background-color: $green-70;
+                    @include text-medium;
+                    font-weight: 600;
+                    color: $grey-15;
+                    line-height: 150%;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+    
+                    &:hover {
+                        background-color: $green-80;
+                    }
                 }
             }
         }

@@ -5,5 +5,116 @@
     .footer-wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 162px;
+
+        .footer-nav {
+            ul {
+                display: flex;
+                gap: 1.625rem;
+                
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        @include text-medium;
+                        font-weight: 600;
+                        line-height: 150%;
+                        color: #fff;
+
+                        &:hover {
+                            color: $green-70;
+                        }
+                    }
+                }
+            }
+        }
+
+        .scroll-to-top {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            @include text-medium;
+            font-weight: 600;
+            line-height: 150%;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+
+            &:hover .bi-arrow-up {
+                transform: translateY(-8px);
+            }
+
+            .icon-arrow-scroll {
+                width: 62px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4.5625rem;
+                background-color: $dark-green-20;
+
+                .bi-arrow-up {
+                    transition: transform 0.3s ease;
+                }
+                
+            }
+        }
+    }
+
+    .footer-contact {
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 162px;
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3.125rem;
+            padding: 1rem 1.875rem;
+            background-color: $dark-green-20;
+            border: 1px solid $dark-green-25;
+            border-radius: .5rem;
+
+            .footer-contact-info {
+                display: flex;
+                gap: 1.25rem;
+                
+
+                .contact-item {
+                    border: 1px solid $dark-green-25;
+                    border-radius: .375rem;
+                    padding: .875rem;
+
+                    i {
+                        color: $green-70;
+                        margin-right: .375rem;
+                    }
+
+                    a {
+                        @include text-medium;
+                        line-height: 150%;
+                        font-weight: 500;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        
+
+        .footer-copyright {
+            @include text-medium;
+            font-weight: 400;
+            line-height: 150%;
+            color: $grey-95;
+        }
     }
 }

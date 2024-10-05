@@ -1,3 +1,16 @@
+// == FOR SMOOTH SCROLL ==
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+    scrollToTopButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+
+// == SLIDER ON HOME PAGE ==
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide',{
         perPage: 3,
