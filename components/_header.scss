@@ -9,7 +9,7 @@
         margin: 0 auto;
         padding: 0 162px;
         width: 100%;
-        
+
         .announcement-bar {
             border-bottom: 1px solid $dark-green-20;
     
@@ -143,7 +143,12 @@
             color: $dark-green-15;
             font-weight: 600;
             @include text-xxlarge;
-            margin-bottom: .875rem
+            padding-bottom: .625rem;
+            margin-bottom: .875rem;
+            text-decoration: underline;
+            text-underline-offset: 1.25rem;
+            text-decoration-color: $green-70;
+            text-decoration-thickness: .1875rem;
         }
 
         h1 {
