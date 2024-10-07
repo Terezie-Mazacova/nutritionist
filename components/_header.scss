@@ -156,6 +156,7 @@
         h1 {
             @include h1;
             margin-bottom: 20px;
+            max-width: 600px;
         }
 
         .intro-description {
@@ -221,3 +222,32 @@
 
 
 // == HEADER FOR SUBPAGE ABOUT ==
+.header-information-about {
+    display: flex;
+    flex-direction: column;
+    gap: 6.25rem;
+    padding: 0 10.125rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin: 6.25rem 0 9.375rem 0;
+
+    .about-intro-content {
+        padding: 6.25rem;
+        background-color: $green-95;
+        border: 1px solid $green-85;
+        border-radius: .75rem;
+        text-align: center;
+        
+        h1 {
+            @include h1;
+            margin-bottom: 3.125rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-20;
+        }
+    }
+}
