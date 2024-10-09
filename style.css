@@ -721,6 +721,12 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.section-our-story .stories-container .story-item .story-img .story-img--radius-top-left {
+  border-top-left-radius: 0.75rem;
+}
+.section-our-story .stories-container .story-item .story-img .story-img--radius-bottom-right {
+  border-bottom-right-radius: 0.75rem;
+}
 .section-our-story .stories-container .story-item .story-text {
   display: flex;
   flex-direction: column;
