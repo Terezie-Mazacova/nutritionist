@@ -12,6 +12,13 @@
     color: $grey-15;
 }
 
+@mixin h2-small {
+    font-size: 2.125rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: $grey-15;
+}
+
 @mixin h3($size) {
     font-size: $size;
 }
