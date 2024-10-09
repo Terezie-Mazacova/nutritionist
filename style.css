@@ -839,4 +839,55 @@ body {
   padding: 0 10.125rem;
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.cta-section {
+  position: relative;
+  padding: 5rem;
+  margin-bottom: 9.375rem;
+  background-color: #F6FBE9;
+  border: 1px solid #E5F5BD;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.cta-section .cta-img-left {
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.cta-section .cta-img-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.cta-section .cta-container {
+  display: flex;
+  gap: 9.375rem;
+  align-items: center;
+}
+.cta-section .cta-container .cta-text h2 {
+  font-size: 2.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.875rem;
+}
+.cta-section .cta-container .cta-text p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+}
+.cta-section .cta-container .cta-button {
+  display: flex;
+  align-items: center;
+  padding: 1.125rem 1.5rem;
+  background-color: #CBEA7B;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
 }/*# sourceMappingURL=style.css.map */
