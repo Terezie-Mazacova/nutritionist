@@ -1,3 +1,4 @@
+// == SECTION OUR STORY ==
 .section-our-story {
     margin-bottom: 9.375rem;
 
@@ -25,6 +26,9 @@
 
     .stories-container {
         position: relative;
+        background-color: $green-95;
+        border: 1px solid $green-85;
+        border-radius: .75rem;
 
         .vertical-line {
             position: absolute;
@@ -97,6 +101,66 @@
 
         .story-item--left-side {
             flex-direction: row-reverse;
+        }
+    }
+}
+
+// == SECTION COMPANY ACHIEVEMENTS ==
+.section-company-achievements {
+    margin-bottom: 9.375rem;
+
+    .header-achievements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            margin-bottom: .625rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-20;
+            max-width: 62.25rem;
+        }
+    }
+
+    .achievements-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+        
+        .card {
+            padding: 2.5rem 3.125rem;
+            background-color: $green-95;
+            border: 1px solid $green-85;
+            border-radius: .75rem;
+
+            .card-header {
+                display: flex;
+                align-items: center;
+                gap: .875rem;
+                margin-bottom: 1.5rem;
+
+                h3 {
+                    @include h3(1.5rem);
+                    font-weight: 600;
+                    line-height: 150%;
+                    color: $grey-15;
+                }
+            }
+
+            .card-description {
+                @include text-medium;
+                font-weight: 500;
+                line-height: 150%;
+                color: $grey-20;
+            }
         }
     }
 }

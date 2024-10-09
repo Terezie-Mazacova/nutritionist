@@ -697,6 +697,9 @@
 }
 .section-our-story .stories-container {
   position: relative;
+  background-color: #F6FBE9;
+  border: 1px solid #E5F5BD;
+  border-radius: 0.75rem;
 }
 .section-our-story .stories-container .vertical-line {
   position: absolute;
@@ -759,6 +762,60 @@
 }
 .section-our-story .stories-container .story-item--left-side {
   flex-direction: row-reverse;
+}
+
+.section-company-achievements {
+  margin-bottom: 9.375rem;
+}
+.section-company-achievements .header-achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.section-company-achievements .header-achievements h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.625rem;
+}
+.section-company-achievements .header-achievements p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+  max-width: 62.25rem;
+}
+.section-company-achievements .achievements-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem;
+}
+.section-company-achievements .achievements-cards .card {
+  padding: 2.5rem 3.125rem;
+  background-color: #F6FBE9;
+  border: 1px solid #E5F5BD;
+  border-radius: 0.75rem;
+}
+.section-company-achievements .achievements-cards .card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+.section-company-achievements .achievements-cards .card .card-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+}
+.section-company-achievements .achievements-cards .card .card-description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
 }
 
 *, *::before, *::after {
