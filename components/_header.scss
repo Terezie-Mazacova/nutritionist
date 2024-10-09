@@ -145,12 +145,19 @@
             color: $dark-green-15;
             font-weight: 600;
             @include text-xxlarge;
-            padding-bottom: .625rem;
             margin-bottom: .875rem;
-            text-decoration: underline;
-            text-underline-offset: 1.25rem;
-            text-decoration-color: $green-70;
-            text-decoration-thickness: .1875rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                height: 0.1875rem;
+                background-color: $green-70;
+                width: 25.8125rem;
+                max-width: 100%;
+                left: 0;
+            }
         }
 
         h1 {

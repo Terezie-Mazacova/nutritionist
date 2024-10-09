@@ -97,6 +97,11 @@ body {
             font-weight: 600;
             line-height: 150%;
             color: $grey-15;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $green-80;
+            }
         }
     }
 }

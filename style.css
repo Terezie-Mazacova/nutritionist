@@ -119,12 +119,18 @@
   color: #1A3129;
   font-weight: 600;
   font-size: 1.75rem;
-  padding-bottom: 0.625rem;
   margin-bottom: 0.875rem;
-  text-decoration: underline;
-  text-underline-offset: 1.25rem;
-  text-decoration-color: #CBEA7B;
-  text-decoration-thickness: 0.1875rem;
+  position: relative;
+}
+.intro-section .content-section .intro-lead::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 0.1875rem;
+  background-color: #CBEA7B;
+  width: 25.8125rem;
+  max-width: 100%;
+  left: 0;
 }
 .intro-section .content-section h1 {
   font-size: 3.625rem;
@@ -890,4 +896,8 @@ body {
   font-weight: 600;
   line-height: 150%;
   color: #262626;
+  transition: background-color 0.3s ease;
+}
+.cta-section .cta-container .cta-button:hover {
+  background-color: #DCF1A7;
 }/*# sourceMappingURL=style.css.map */
