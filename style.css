@@ -218,6 +218,50 @@
   color: #333333;
 }
 
+.header-information {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 162px;
+}
+.header-information .header-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  padding: 6.25rem;
+  background-color: #F6FBE9;
+  border: 1px solid #E5F5BD;
+  border-radius: 0.75rem;
+  margin-top: 6.25rem;
+  position: relative;
+}
+.header-information .header-info-container .header-abstract-design {
+  position: absolute;
+  left: 420px;
+  top: 0;
+}
+.header-information .header-info-container .header-icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  z-index: 2;
+}
+.header-information .header-info-container .header-intro-content {
+  z-index: 2;
+}
+.header-information .header-info-container .header-intro-content h1 {
+  font-size: 3.625rem;
+  color: #1A3129;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.header-information .header-info-container .header-intro-content p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+}
+
 .section-footer {
   padding: 3.125rem;
   background-color: #1A3129;
