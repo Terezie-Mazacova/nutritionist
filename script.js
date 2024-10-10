@@ -22,7 +22,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 });
 
 
-// == SECTION OUR PRICING ==
+// == SECTION OUR PRICING AND OUR TEAM==
 const jsTabs = document.querySelectorAll('.js-tabs')
 
 jsTabs.forEach((jsTab) =>{

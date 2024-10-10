@@ -32,6 +32,10 @@
     font-size: 1.75rem;
 }
 
+@mixin text-xlarge {
+    font-size: 1.5rem;
+}
+
 @mixin text-medium-large {
     font-size: 1.375rem;
 }

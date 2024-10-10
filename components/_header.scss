@@ -274,7 +274,6 @@
         padding: 6.25rem;
         background-color: $green-95;
         border: 1px solid $green-85;
-        border-radius: .75rem;
         margin-top: 6.25rem;
         position: relative;
 
@@ -305,5 +304,10 @@
                 color: $grey-20;
             }
         }
-    }    
+    }
+    
+    .header-info-team {
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
+    }
 }
