@@ -947,6 +947,76 @@
   color: #4C4C4D;
 }
 
+.section-how-works {
+  margin-top: 6.25rem;
+  margin-bottom: 9.375rem;
+}
+.section-how-works .header-how-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 13.4375rem;
+}
+.section-how-works .header-how-works h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #262626;
+  margin-bottom: 0.625rem;
+}
+.section-how-works .header-how-works p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #333333;
+  max-width: 62.25rem;
+}
+.section-how-works .cards-works-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.125rem;
+}
+.section-how-works .cards-works-container .card-works {
+  padding: 3.125rem;
+  background-color: #F6FBE9;
+  border: 1px solid #EEF8D3;
+  border-radius: 0.75rem;
+  position: relative;
+  margin-bottom: 8.4375rem;
+}
+.section-how-works .cards-works-container .card-works:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+.section-how-works .cards-works-container .card-works .card-number {
+  position: absolute;
+  top: -130px;
+  left: -0.125rem;
+  z-index: -1;
+  font-size: 9.375rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #468671;
+}
+.section-how-works .cards-works-container .card-works .card-works-content {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.section-how-works .cards-works-container .card-works .card-works-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+}
+.section-how-works .cards-works-container .card-works .card-works-description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #4C4C4D;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;

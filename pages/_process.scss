@@ -1,0 +1,77 @@
+.section-how-works {
+    margin-top: 6.25rem;
+    margin-bottom: 9.375rem;
+
+    .header-how-works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 13.4375rem;
+        
+
+        h2 {
+            @include h2;
+            margin-bottom: .625rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 500;
+            line-height: 150%;
+            color: $grey-20;
+            max-width: 62.25rem;
+        }
+    }
+
+    .cards-works-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.125rem;
+
+        .card-works {
+            padding: 3.125rem;
+            background-color: $green-95;
+            border: 1px solid $green-90;
+            border-radius: .75rem;
+            position: relative;
+            margin-bottom: 8.4375rem;
+
+            &:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+
+            .card-number {
+                position: absolute;
+                top: -130px;
+                left: -0.125rem;
+                z-index: -1;
+                @include text-extra-huge;
+                font-weight: 700;
+                line-height: 150%;
+                color: $dark-green-40;
+            }
+
+            .card-works-content {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                h3 {
+                    @include h3(1.5rem);
+                    font-weight: 600;
+                    line-height: 150%;
+                    color: $grey-15;
+                }
+            }
+
+            .card-works-description {
+                @include text-medium;
+                font-weight: 500;
+                line-height: 150%;
+                color: $grey-30;
+            }
+        }
+    }
+}

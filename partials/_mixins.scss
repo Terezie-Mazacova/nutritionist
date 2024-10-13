@@ -24,6 +24,10 @@
 }
 
 // == PARAGRAPHS ==
+@mixin text-extra-huge {
+    font-size: 9.375rem;
+}
+
 @mixin text-huge {
     font-size: 3.125rem;
 }
