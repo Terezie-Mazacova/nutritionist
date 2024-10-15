@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .header-wrapper {
@@ -890,6 +891,65 @@
   font-weight: 500;
   line-height: 150%;
   color: #4C4C4D;
+}
+
+.table-wrapper {
+  background-color: #F6FBE9;
+  border: 1px solid #E5F5BD;
+  border-radius: 0.75rem;
+  padding: 3.125rem;
+  margin-bottom: 9.375rem;
+}
+.table-wrapper .pricing-table {
+  width: 100%;
+  border-collapse: separate;
+}
+.table-wrapper .pricing-table .table-header th {
+  background-color: #234338;
+  padding: 20px 30px;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 150%;
+  border-spacing: 0 50px;
+}
+.table-wrapper .pricing-table td {
+  padding: 3.125rem 0;
+  border-bottom: 1px solid #DCF1A7;
+  border-right: 1px solid #DCF1A7;
+}
+.table-wrapper .pricing-table td.no-border-right {
+  border-right: none;
+}
+.table-wrapper .pricing-table td.no-border-right-bottom {
+  border-right: none; /* Odstranění pravého okraje */
+  border-bottom: none; /* Odstranění dolního okraje */
+}
+.table-wrapper .pricing-table td.no-border-center {
+  border-bottom: none;
+}
+.table-wrapper .pricing-table .feature-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 152%;
+  color: #262626;
+}
+.table-wrapper .pricing-table .feature-title {
+  text-align: left;
+}
+.table-wrapper .pricing-table .icon-center {
+  text-align: center;
+}
+.table-wrapper .pricing-table .icon-center .bi-check-lg {
+  background-color: #CBEA7B;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.table-wrapper .pricing-table .icon-center .bi-x {
+  background-color: #EEF8D3;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 *, *::before, *::after {

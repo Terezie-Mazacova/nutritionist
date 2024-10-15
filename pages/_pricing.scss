@@ -1,0 +1,71 @@
+.table-wrapper {
+    background-color: $green-95;
+    border: 1px solid $green-85;
+    border-radius: .75rem;
+    padding: 3.125rem;
+    margin-bottom: 9.375rem;
+
+    .pricing-table {
+        width: 100%;
+        border-collapse: separate;
+
+        .table-header {
+            th {
+                background-color: $dark-green-20;
+                padding: 20px 30px;
+                border-radius: .5rem;
+                color: #fff;
+                @include text-medium-large;
+                font-weight: 500;
+                line-height: 150%;
+                border-spacing: 0 50px;
+            }
+        }
+        
+        td {
+            padding: 3.125rem 0;
+            border-bottom: 1px solid $green-80;
+            border-right: 1px solid $green-80;
+
+            &.no-border-right {
+                border-right: none;
+            }
+
+            &.no-border-right-bottom {
+                border-right: none; /* Odstranění pravého okraje */
+                border-bottom: none; /* Odstranění dolního okraje */
+            }
+
+            &.no-border-center {
+                border-bottom: none;
+            }
+        }
+
+        .feature-name {
+            @include text-large;
+            font-weight: 500;
+            line-height: 152%;
+            color: $grey-15;
+        }
+
+        .feature-title {
+            text-align: left;
+        }
+
+        .icon-center {
+            text-align: center;
+            
+            .bi-check-lg {
+                background-color: $green-70;
+                padding: .5rem;
+                border-radius: .5rem;
+            }
+
+            .bi-x {
+                background-color: $green-90;
+                padding: .5rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
