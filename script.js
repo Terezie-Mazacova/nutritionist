@@ -22,7 +22,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 });
 
 
-// == SECTION OUR PRICING AND OUR TEAM==
+// == SECTION OUR PRICING AND OUR TEAM ==
 const jsTabs = document.querySelectorAll('.js-tabs')
 
 jsTabs.forEach((jsTab) =>{
@@ -42,4 +42,14 @@ jsTabs.forEach((jsTab) =>{
         target.classList.add("active");
         });
     });
+})
+
+
+// == FAQ ==
+const toggles = document.querySelectorAll('.faq-toggle')
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle ('active')
+    })
 })
