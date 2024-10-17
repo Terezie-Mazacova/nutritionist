@@ -1,1 +1,20 @@
 // == SECTION FILTERMENU ==
+.section-filter-blogs {
+    .filtermenu {
+        display: flex;
+        gap: 5.2375rem;
+        padding: 1.875rem 9.375rem;
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        background-color: $dark-green-20;
+
+        li {
+            list-style-type: none;
+            @include text-medium;
+            font-weight: 600;
+            line-height: 150%;
+            color: $grey-90;
+
+        }
+    }
+}
