@@ -53,3 +53,41 @@ toggles.forEach(toggle => {
         toggle.parentNode.classList.toggle ('active')
     })
 })
+
+
+
+
+const filterButtons = document.querySelectorAll('.filtermenu li');
+const filterItems = document.querySelectorAll('.nutrition-post');
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        renderFilterItems(filter);
+        
+        resetLinks();
+        button.classList.add('active');
+    });
+});
+
+function renderFilterItems(query) {
+    filterItems.forEach((item) => {
+        if (query === 'all' || item.classList.contains(query)) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+
+function resetLinks() {
+    filterButtons.forEach(li => {
+        li.classList.remove('active');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderFilterItems('all');
+    document.querySelector('.filtermenu li[data-filter="all"]').classList.add('active');
+});
+
