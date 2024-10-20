@@ -96,7 +96,7 @@
 
                     <div class="contact-form-and-map">
                         <div class="contact-form-wrapper">
-                            <form class="footer-form">
+                            <form class="contact-form">
                                 <div class="row">
                                     <div class="input-group group-name">
                                         <input type="text" id="name" placeholder="Placeholder" required>
@@ -110,23 +110,34 @@
                                 
                                 <div class="input-group">
                                     <input type="text" id="email" placeholder="Placeholder" required>
-                                    <label for="email">E-mail</label>
+                                    <label for="email" class="input-group-mt">E-mail</label>
                                 </div>
                                 <div class="input-group">
                                     <textarea id="message" rows="8" placeholder="Placeholder"></textarea>
-                                    <label for="message">Text</label>
+                                    <label for="message" class="input-group-mt">Message</label>
                                 </div>
-                                <button type="submit">Odeslat</button>
+
+                                <p class="text-limit">Max 250 Chars</p>
+
+                                <button type="submit">Send Message</button>
                             </form>
                         </div>
 
                         <div class="contact-map-and-icons">
-                            <img src="./img/contactus-page/Map.jpg" alt="Map">
-
+                            <img src="./img/contactus-page/Map.jpg" alt="Map" class="contact-map">
+                            
                             <div class="contact-icons">
-                                <img src="./img/icons/facebook-icon.svg" alt="Icon Facebook">
-                                <img src="./img/icons/skype-icon.svg" alt="Icon Skype">
-                                <img src="./img/icons/instagram-icon.svg" alt="Icon Instagram">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="./img/icons/facebook-icon.svg" alt="Icon Facebook">
+                                </a>
+
+                                <a href="https://x.com/?lang=cs" target="_blank">
+                                    <img src="./img/icons/skype-icon.svg" alt="Icon Skype">
+                                </a>
+                                
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="./img/icons/instagram-icon.svg" alt="Icon Instagram">
+                                </a>
                             </div>
                         </div>
                     </div>

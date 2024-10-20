@@ -1,0 +1,131 @@
+.section-contactus {
+    margin-bottom: 9.375rem;
+    .contactus-info {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        background-color: $dark-green-15;
+        padding: 1.875rem 0;
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        margin-bottom: 3.125rem;
+
+        .contact-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.875rem;
+            background-color: $dark-green-20;
+            border: 1px solid $dark-green-25;
+            border-radius: .5rem;
+            width: 325px;
+
+            i {
+                color: $green-70;
+                font-size: 1.4375rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                @include text-medium;
+                font-weight: 500;
+                line-height: 150%;
+            }
+        }
+    }
+
+    .contact-form-and-map {
+        display: flex;
+        gap: 3.125rem;
+        background-color: $green-95;
+        border: 1px solid $green-85;
+        border-radius: .75rem;
+        padding: 5rem;
+
+        .contact-form-wrapper {
+            width: 50%;
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+
+                .row{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1.25rem;
+            
+                    #name {
+                        height: 2.625rem;
+                    }
+    
+                    .group-name {
+                        width: 50%;
+                    }
+                }
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    @include text-medium;
+                    font-weight: 600;
+                    color: $gray-custom;
+
+                    input, textarea {
+                        background-color: $green-90;
+                        border: 1px solid $green-80;
+                        border-radius: .5rem;
+                        padding: 1.5rem;
+                    }
+
+                    label {
+                        margin-bottom: .625rem;
+                    }
+
+                    .input-group-mt {
+                        margin-top: 1.875rem;
+                    }
+                }
+
+                .text-limit {
+                    text-align: end;
+                    margin-top: .625rem;
+                    @include text-small;
+                    font-weight: 500;
+                    color: $grey-35;
+                }
+
+                button {
+                    margin-top: 3.125rem;
+                    background-color: $green-70;
+                    border: none;
+                    border-radius: .5rem;
+                    padding: 1.125rem 1.5rem;
+                    @include text-medium;
+                    font-weight: 600;
+                    line-height: 150%;
+                    color: $grey-15;
+                }
+            }
+        }
+
+        .contact-map-and-icons {
+            width: 50%;
+
+            .contact-map {
+                width: 100%;
+            }
+
+            .contact-icons {
+                display: flex;
+                justify-content: flex-end;
+                gap: .875rem;
+                margin-top: 1.875rem;
+            }
+        }
+
+    }
+}
+
