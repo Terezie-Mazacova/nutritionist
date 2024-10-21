@@ -1,5 +1,4 @@
 // == HEADER FOR HOME PAGE ==
-
 .header-wrapper {
     display: flex;
     flex-direction: column;
@@ -104,6 +103,7 @@
     }
 }
 
+// == HERO FOR HOME PAGE ==
 .intro-section {
     display: flex;
     gap: 3.125rem;
@@ -210,7 +210,7 @@
 }
 
 
-// == HEADER FOR SUBPAGE ABOUT ==
+// == HERO FOR SUBPAGE ABOUT ==
 .header-information-about {
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@
 }
 
 
-// == HEADER FOR SUBPAGE ==
+// == HERO FOR SUBPAGE ==
 .header-information {
     max-width: 120rem;
     margin: 0 auto;
@@ -296,5 +296,21 @@
     .header-info-team {
         border-top-left-radius: .75rem;
         border-top-right-radius: .75rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+    // == HEADER
+    .nav-button-wrapper {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-container {
+        padding: 0 1rem !important;
     }
 }
