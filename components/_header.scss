@@ -3,72 +3,53 @@
 .header-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: $dark-green-15; //dark-green-15
-    padding: 0 10.125rem;
+    background-color: $dark-green-15;
+    //padding: 0 10.125rem; TEMPORARY
 
     .header-container {
         max-width: 120rem;
         margin: 0 auto;
         padding: 0 162px;
-        width: 100%;
+        width: 100%;            
 
-        .announcement-bar {
-            border-bottom: 1px solid $dark-green-20;
-    
-            .announcement-inner {
-                display: flex;
-                justify-content: space-between;
-                margin: .875rem 0;
-                padding: 0 1.25rem;
-                background-color: $dark-green-20;
-                border: 1px solid $dark-green-25;
-                border-radius: .375rem;
-    
-                .annoucement-item-left {
-                    img {
-                        height: 100%;
-                    }
-                }
-                
-                .announcement-content-text {
-                    display: flex;
-                    align-items: center;
-                    padding: .625rem;
-                    color: white;
-                    cursor: pointer;
-                    transition: transform 0.3s ease;
-    
-                    &:hover .bi-arrow-right {
-                        transform: translateX(3px);
-                    }
-    
-                    p {
-                        margin-left: .375rem;
-                        margin-right: 1.25rem;
-                        @include text-small;
-                        font-weight: 500;
-                    }
-    
-                    .bi-arrow-right {
-                        font-size: 1.25rem;
-                        transition: transform 0.3s ease;
-                    }
-                }
-    
-                .annoucement-item-right {
-                    img {
-                        height: 100%;
-                    }
-                }
+        .announcement-content-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $dark-green-20;
+            border: 1px solid $dark-green-25;
+            border-radius: .375rem;
+            padding: .625rem;
+            margin: .875rem 0;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            &:hover .bi-arrow-right {
+                transform: translateX(3px);
+            }
+
+            p {
+                margin-left: .375rem;
+                margin-right: 1.25rem;
+                @include text-small;
+                font-weight: 500;
+            }
+
+            .bi-arrow-right {
+                font-size: 1.25rem;
+                transition: transform 0.3s ease;
             }
         }
+        
     
         // == LOGO AND NAV ==
         .logo-nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 1.25rem 0;
+            padding: 1.25rem 0;
+            border-top: 1px solid $dark-green-20;
     
             .nav-button-wrapper {
                 display: flex;
@@ -101,7 +82,7 @@
                     }
                 }
     
-                button {
+                .btn-contactus {
                     border: none;
                     border-radius: .5rem;
                     padding: .875rem 1.5rem;
@@ -112,6 +93,7 @@
                     line-height: 150%;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
+                    text-decoration: none;
     
                     &:hover {
                         background-color: $green-80;
@@ -279,8 +261,13 @@
 
         .header-abstract-design {
             position: absolute;
-            left: 420px;
+            left: 50%;
             top: 0;
+            transform: translateX(-50%);
+            width: 100%; 
+            max-width: 749px; 
+            height: auto; 
+            z-index: 1;
         }
 
         .header-icon {
@@ -293,7 +280,7 @@
             z-index: 2;
 
             h1 {
-                @include h1;
+                @include h2;
                 margin-bottom: 1.25rem;
             }
 
