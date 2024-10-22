@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 .header-wrapper {
@@ -968,8 +967,8 @@
   border-right: none;
 }
 .table-wrapper .pricing-table td.no-border-right-bottom {
-  border-right: none; /* Odstranění pravého okraje */
-  border-bottom: none; /* Odstranění dolního okraje */
+  border-right: none;
+  border-bottom: none;
 }
 .table-wrapper .pricing-table td.no-border-center {
   border-bottom: none;
@@ -1539,13 +1538,13 @@ body {
   background-color: #DCF1A7;
 }
 .section-our-pricing .tabs-pricing .tabs-lists .plans-wrapper .plan-card--left {
-  height: 49.6875rem;
+  height: 1%;
 }
 .section-our-pricing .tabs-pricing .tabs-lists .plans-wrapper .plan-card--center {
-  height: 55.625rem;
+  height: 2%;
 }
 .section-our-pricing .tabs-pricing .tabs-lists .plans-wrapper .plan-card--right {
-  height: 1087px;
+  height: 3%;
 }
 
 .cta-section {
