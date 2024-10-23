@@ -615,11 +615,18 @@
   line-height: 150%;
   color: #59595A;
 }
-.section-our-blogs .blogs-list .blogs-card .blogs-container .blogs-author-info .author-icon-container i {
+.section-our-blogs .blogs-list .blogs-card .blogs-container .blogs-author-info .author-icon-container {
   padding: 1.125rem;
   background-color: #F6FBE9;
   border: 1px solid #EEF8D3;
   border-radius: 0.5rem;
+}
+.section-our-blogs .blogs-list .blogs-card .blogs-container .blogs-author-info .author-icon-container #heart-icon {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  stroke: black;
+  overflow: visible;
 }
 
 .section-our-testimonials {

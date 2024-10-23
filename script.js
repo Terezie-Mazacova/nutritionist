@@ -1,13 +1,14 @@
 // == FOR SMOOTH SCROLL ==
 const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-    scrollToTopButton.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+scrollToTopButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
+});
+
 
 
 // == SLIDER ON HOME PAGE ==
@@ -20,6 +21,36 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
 });
+
+
+// == HEART ACTION ==
+function setHeartState(heartIcon, isFilled) {
+    const path = heartIcon.querySelector('path');
+    if (isFilled) {
+        path.setAttribute('fill', 'red');
+        path.setAttribute('stroke', 'none');
+        heartIcon.dataset.filled = 'true';
+    } else {
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke', 'black');
+        heartIcon.dataset.filled = 'false';
+    }
+}
+
+document.querySelectorAll('.author-icon-container').forEach((container, index) => {
+    const heartIcon = container.querySelector('svg');
+    
+    const isFilled = localStorage.getItem(`heartFilled-${index}`) === 'true';
+    setHeartState(heartIcon, isFilled);
+
+    container.addEventListener('click', () => {
+        const currentlyFilled = heartIcon.dataset.filled === 'true';
+        setHeartState(heartIcon, !currentlyFilled);
+
+        localStorage.setItem(`heartFilled-${index}`, !currentlyFilled);
+    });
+});
+
 
 
 // == SECTION OUR PRICING AND OUR TEAM ==

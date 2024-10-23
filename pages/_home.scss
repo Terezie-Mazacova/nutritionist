@@ -155,11 +155,19 @@
                         }
                     }
 
-                    .author-icon-container i {
+                    .author-icon-container {
                         padding: 1.125rem;
                         background-color: $green-95;
                         border: 1px solid $green-90;
                         border-radius: .5rem;
+
+                        #heart-icon {
+                            cursor: pointer;
+                            width: 16px;
+                            height: 16px;
+                            stroke: black;
+                            overflow: visible;
+                        }
                     }
                 }
             }
@@ -167,6 +175,12 @@
         
     }
 }
+
+
+
+
+
+
 
 // == SECTION OUR TESTIMONIALS ==
 .section-our-testimonials {
