@@ -87,7 +87,7 @@ toggles.forEach(toggle => {
 
 
 
-
+// == FILTERMENU ==
 const filterButtons = document.querySelectorAll('.filtermenu li');
 const filterItems = document.querySelectorAll('.nutrition-post');
 

@@ -121,7 +121,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .footer-wrapper {
-        padding: 0 32px !important;
+        padding: 0 2rem !important;
         flex-wrap: wrap;
 
         .footer-nav {
@@ -132,7 +132,7 @@
         .scroll-to-top {
             width: 50%;
             justify-content: flex-end;
-            padding-left: 5px;
+            padding-left: .3125rem;
 
             p {
                 @include text-small;
@@ -141,17 +141,17 @@
     }
 
     .footer-contact {
-        padding: 0 32px !important;
+        padding: 0 2rem !important;
         
         .footer-container {
             flex-direction: column !important;
-            gap: 10px;
+            gap: .625rem;
 
             .contact-item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 12px;
+                gap: .75rem;
             }
         }
     }
@@ -183,7 +183,7 @@
         .scroll-to-top {
             width: 50%;
             justify-content: flex-end;
-            padding-left: 5px;
+            padding-left: .3125rem;
 
             p {
                 @include text-small;
@@ -205,6 +205,4 @@
             text-align: center;
         }
     }
-
-
 }

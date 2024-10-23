@@ -3,6 +3,10 @@
     font-size: 3.625rem;
     color: $dark-green-15;
     font-weight: 700;
+
+    @media (max-width: 767px) {
+        font-size: 3rem;
+    }
 }
 
 @mixin h2 {

@@ -241,7 +241,7 @@
 }
 
 
-// == HERO FOR SUBPAGE ==
+// == HEADER INFORMATION FOR SUBPAGE ==
 .header-information {
     max-width: 120rem;
     margin: 0 auto;
@@ -302,15 +302,41 @@
 
 
 
-@media screen and (max-width: 1023px) {
-    // == HEADER
+@media screen and (max-width: 1279px) {
+    // == HEADER ==
     .nav-button-wrapper {
         display: none !important;
     }
 }
 
 @media screen and (max-width: 767px) {
+    // == HEADER ==
     .header-container {
         padding: 0 1rem !important;
+    }
+
+    // == HEADER INFORMATION FOR SUBPAGE ==
+    .header-information {
+        padding: 0 1rem;
+
+        .header-info-container {
+            padding: 1.875rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    // == HEADER ==
+    .header-container {
+        padding: 0 2rem !important;
+    }
+
+    // == HEADER INFORMATION FOR SUBPAGE ==
+    .header-information {
+        padding: 0 2rem;
+
+        .header-info-container {
+            padding: 5rem;
+        }
     }
 }
