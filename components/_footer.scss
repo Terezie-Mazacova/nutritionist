@@ -119,6 +119,43 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .footer-wrapper {
+        padding: 0 32px !important;
+        flex-wrap: wrap;
+
+        .footer-nav {
+            order: 3;
+            margin-top: 1.25rem;
+        }
+
+        .scroll-to-top {
+            width: 50%;
+            justify-content: flex-end;
+            padding-left: 5px;
+
+            p {
+                @include text-small;
+            }
+        }
+    }
+
+    .footer-contact {
+        padding: 0 32px !important;
+        
+        .footer-container {
+            flex-direction: column !important;
+            gap: 10px;
+
+            .contact-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 767px) {
     .footer-wrapper {
