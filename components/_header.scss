@@ -280,7 +280,7 @@
             z-index: 2;
 
             h1 {
-                @include h2;
+                @include h1-small;
                 margin-bottom: 1.25rem;
             }
 

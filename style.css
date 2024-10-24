@@ -127,11 +127,6 @@
   margin-bottom: 20px;
   max-width: 600px;
 }
-@media (max-width: 767px) {
-  .intro-section .content-section h1 {
-    font-size: 3rem;
-  }
-}
 .intro-section .content-section .intro-description {
   font-size: 1.125rem;
   font-weight: 500;
@@ -204,11 +199,6 @@
   font-weight: 700;
   margin-bottom: 3.125rem;
 }
-@media (max-width: 767px) {
-  .header-information-about .about-intro-content h1 {
-    font-size: 3rem;
-  }
-}
 .header-information-about .about-intro-content p {
   font-size: 1.125rem;
   font-weight: 500;
@@ -252,11 +242,15 @@
   z-index: 2;
 }
 .header-information .header-info-container .header-intro-content h1 {
-  font-size: 3rem;
+  font-size: 3.125rem;
+  color: #1A3129;
   font-weight: 700;
-  line-height: 150%;
-  color: #262626;
   margin-bottom: 1.25rem;
+}
+@media (max-width: 767px) {
+  .header-information .header-info-container .header-intro-content h1 {
+    font-size: 2.125rem;
+  }
 }
 .header-information .header-info-container .header-intro-content p {
   font-size: 1.125rem;
@@ -1447,6 +1441,16 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 
 .section-our-pricing {
   margin: 9.375rem 0;
@@ -1643,6 +1647,11 @@ body {
   color: #262626;
   margin-bottom: 0.875rem;
 }
+@media (max-width: 767px) {
+  .cta-section .cta-container .cta-text h2 {
+    font-size: 1.5rem;
+  }
+}
 .cta-section .cta-container .cta-text p {
   font-size: 1.125rem;
   font-weight: 500;
@@ -1665,4 +1674,28 @@ body {
 }
 .cta-section .cta-container .cta-button:hover {
   background-color: #DCF1A7;
+}
+
+@media screen and (max-width: 767px) {
+  .cta-section {
+    padding: 2.5rem;
+    margin-bottom: 2.1875rem;
+  }
+  .cta-section .cta-img-left {
+    top: -2.5rem;
+    left: -1.875rem;
+  }
+  .cta-section .cta-img-right {
+    right: -30px;
+    bottom: -30px;
+  }
+  .cta-section .cta-container {
+    flex-direction: column;
+    gap: 1.25rem !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .cta-container {
+    gap: 3.125rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */
