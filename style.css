@@ -277,6 +277,7 @@
   }
   .header-information .header-info-container {
     padding: 1.875rem;
+    margin-top: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -542,6 +543,11 @@
   color: #262626;
   margin-bottom: 0.625rem;
 }
+@media (max-width: 767px) {
+  .section-features .features-header h2 {
+    font-size: 1.75rem;
+  }
+}
 .section-features .features-header p {
   font-size: 1.125rem;
   line-height: 150%;
@@ -594,6 +600,11 @@
   line-height: 150%;
   color: #262626;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .section-our-blogs .blogs-header h2 {
+    font-size: 1.75rem;
+  }
 }
 .section-our-blogs .blogs-header p {
   font-size: 1.125rem;
@@ -695,6 +706,11 @@
   color: #262626;
   margin-bottom: 0.625rem;
 }
+@media (max-width: 767px) {
+  .section-our-testimonials .testimonials-header h2 {
+    font-size: 1.75rem;
+  }
+}
 .section-our-testimonials .testimonials-header p {
   font-size: 1.125rem;
   font-weight: 500;
@@ -719,6 +735,11 @@
   line-height: 150%;
   color: #262626;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .section-our-story .our-story-header h2 {
+    font-size: 1.75rem;
+  }
 }
 .section-our-story .our-story-header p {
   font-size: 1.125rem;
@@ -818,6 +839,11 @@
   line-height: 150%;
   color: #262626;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .section-company-achievements .header-achievements h2 {
+    font-size: 1.75rem;
+  }
 }
 .section-company-achievements .header-achievements p {
   font-size: 1.125rem;
@@ -944,6 +970,11 @@
   color: #262626;
   margin-bottom: 0.625rem;
 }
+@media (max-width: 767px) {
+  .section-how-works .header-how-works h2 {
+    font-size: 1.75rem;
+  }
+}
 .section-how-works .header-how-works p {
   font-size: 1.125rem;
   font-weight: 500;
@@ -969,7 +1000,7 @@
 }
 .section-how-works .cards-works-container .card-works .card-number {
   position: absolute;
-  top: -130px;
+  top: -8.125rem;
   left: -0.125rem;
   z-index: -1;
   font-size: 9.375rem;
@@ -979,7 +1010,7 @@
 }
 .section-how-works .cards-works-container .card-works .card-works-content {
   display: flex;
-  gap: 14px;
+  gap: 0.875rem;
   align-items: center;
   margin-bottom: 1.5rem;
 }
@@ -996,6 +1027,34 @@
   color: #4C4C4D;
 }
 
+@media screen and (max-width: 767px) {
+  .cards-works-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .cards-works-container .card-works {
+    padding: 1.875rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .cards-works-container .card-works .card-number {
+    font-size: 5.9375rem !important;
+    top: -5rem !important;
+  }
+  .cards-works-container .card-works:last-child {
+    margin-bottom: 0 !important;
+  }
+  .cards-works-container .card-works h3 {
+    font-size: 1.375rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section-how-works {
+    margin-top: 3.125rem;
+    margin-bottom: 2.1875rem;
+  }
+  .section-how-works .header-how-works {
+    margin-bottom: 9.375rem;
+  }
+}
 .table-wrapper {
   background-color: #F6FBE9;
   border: 1px solid #E5F5BD;
@@ -1071,6 +1130,11 @@
   line-height: 150%;
   color: #262626;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .section-faq .header-faq h2 {
+    font-size: 1.75rem;
+  }
 }
 .section-faq .header-faq p {
   font-size: 1.125rem;
@@ -1509,6 +1573,11 @@ body {
   line-height: 150%;
   color: #262626;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .section-our-pricing .pricing-header h2 {
+    font-size: 1.75rem;
+  }
 }
 .section-our-pricing .pricing-header p {
   font-size: 1.125rem;

@@ -20,6 +20,10 @@
     font-weight: 700;
     line-height: 150%;
     color: $grey-15;
+
+    @media (max-width: 767px) {
+        @include text-xxlarge;
+    }
 }
 
 @mixin h2-small {
