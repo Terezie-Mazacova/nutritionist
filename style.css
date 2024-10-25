@@ -1730,12 +1730,19 @@ body {
     left: -1.875rem;
   }
   .cta-section .cta-img-right {
-    right: -30px;
-    bottom: -30px;
+    right: -40px;
+    bottom: -40px;
   }
   .cta-section .cta-container {
     flex-direction: column;
     gap: 1.25rem !important;
+  }
+  .cta-section .cta-container .cta-text {
+    text-align: center;
+  }
+  .cta-section .cta-container .cta-button {
+    width: 100%;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {

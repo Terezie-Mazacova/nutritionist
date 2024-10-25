@@ -329,13 +329,22 @@ body {
         }
 
         .cta-img-right {
-            right: -30px;
-            bottom: -30px;
+            right: -40px;
+            bottom: -40px;
         }
 
         .cta-container {
             flex-direction: column;
             gap: 1.25rem !important;
+
+            .cta-text {
+                text-align: center;
+            }
+
+            .cta-button {
+                width: 100%;
+                justify-content: center;
+            }
         }
     }
 }
