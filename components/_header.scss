@@ -315,6 +315,21 @@
         padding: 0 1rem !important;
     }
 
+    // == HERO FOR SUBPAGE ABOUT ==
+    .header-information-about {
+        padding: 0 1rem;
+        gap: 3.125rem;
+        margin: 2.1875rem auto;
+
+        .about-intro-content {
+            padding: 1.875rem;
+
+            h1 {
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
     // == HEADER INFORMATION FOR SUBPAGE ==
     .header-information {
         padding: 0 1rem;
@@ -331,6 +346,15 @@
     // == HEADER ==
     .header-container {
         padding: 0 2rem !important;
+    }
+
+    // == HERO FOR SUBPAGE ABOUT ==
+    .header-information-about {
+        padding: 0 2rem;
+
+        .about-intro-content {
+            padding: 5rem;
+        }
     }
 
     // == HEADER INFORMATION FOR SUBPAGE ==
