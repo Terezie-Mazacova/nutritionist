@@ -849,6 +849,27 @@
 .section-our-story .stories-container .story-item--left-side {
   flex-direction: row-reverse;
 }
+.section-our-story .show-more-container {
+  display: flex;
+  justify-content: center;
+}
+.section-our-story .show-more-container .show-more-btn {
+  padding: 1.125rem 1.5rem;
+  background-color: #CBEA7B;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #262626;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+.section-our-story .show-more-container .show-more-btn:hover {
+  background-color: #DCF1A7;
+}
 
 .section-company-achievements {
   margin-bottom: 9.375rem;
@@ -909,6 +930,52 @@
   color: #333333;
 }
 
+@media screen and (max-width: 1023px) {
+  .section-our-story {
+    margin-bottom: 2.1875rem;
+  }
+  .section-our-story .our-story-header {
+    margin-bottom: 3.125rem;
+  }
+  .section-our-story .stories-container .vertical-line {
+    display: none;
+  }
+  .section-our-story .stories-container .story-item {
+    display: none;
+    flex-direction: column;
+  }
+  .section-our-story .stories-container .story-item:nth-child(-n+4) {
+    display: block;
+  }
+  .section-our-story .stories-container .story-item .story-img {
+    width: 100% !important;
+  }
+  .section-our-story .stories-container .story-item .story-img .story-img--radius-tablet {
+    border-top-right-radius: 0.75rem;
+  }
+  .section-our-story .stories-container .story-item .story-img .story-img--radius-bottom-right {
+    border-bottom-right-radius: 0 !important;
+  }
+  .section-our-story .stories-container .story-item .story-text {
+    width: 100% !important;
+    padding: 1.875rem !important;
+  }
+  .section-our-story .stories-container .story-item .story-text h3 {
+    font-size: 1.375rem;
+  }
+  .section-our-story .stories-container .story-item--left-side {
+    flex-direction: column !important;
+  }
+  .section-our-story .stories-container .story-item--left-side .story-text--left-side {
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .show-more-container {
+    display: none !important;
+  }
+}
 .section-our-team {
   margin-bottom: 9.375rem;
 }

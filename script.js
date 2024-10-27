@@ -122,3 +122,49 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.filtermenu li[data-filter="all"]').classList.add('active');
 });
 
+
+
+// == SECTION OUR STORY AND BTN SHOW MORE ===
+document.addEventListener("DOMContentLoaded", function() {
+    const showMoreBtn = document.querySelector('.show-more-btn');
+    const allCards = document.querySelectorAll('.story-item');
+    let cardsToShow = 4;
+
+    function updateCardVisibility() {
+        allCards.forEach((card, index) => {
+            if (index < cardsToShow) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (cardsToShow >= allCards.length) {
+            showMoreBtn.style.display = 'none';
+        } else {
+            showMoreBtn.style.display = 'flex';
+        }
+    }
+
+    if (window.innerWidth <= 1023) {
+        updateCardVisibility();
+    }
+
+    showMoreBtn.addEventListener('click', function() {
+        if (window.innerWidth <= 1023) {
+            const remainingCards = allCards.length - cardsToShow;
+            const cardsToReveal = Math.min(3, remainingCards);
+
+            cardsToShow += cardsToReveal;
+            updateCardVisibility();
+        }
+    });
+});
+
+
+
+
+
+
+
+
