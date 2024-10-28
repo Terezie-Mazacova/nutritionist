@@ -13,7 +13,6 @@
 
         .tab-team {
             display: flex;
-            justify-content: center;
             align-items: center;
             background-color: $dark-green-20;
             padding: 1.875rem 9.375rem;
@@ -23,6 +22,13 @@
             list-style-type: none;
             gap: 3.75rem;
             margin-bottom: 3.125rem;
+            overflow-x: auto;
+            max-width: 100%;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
 
             .team-tab {
                 @include text-medium;
@@ -82,5 +88,44 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // == SECTION OUR TEAM ==
+    .team-wrapper {
+        flex-direction: column !important;
+        gap: 3.875rem !important;
+
+        .team-member-info {
+            padding: 1.25rem !important;
+            bottom: -1.875rem !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    // == SECTION OUR TEAM ==
+    .team-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.875rem !important;
+
+        .team-member-info {
+            bottom: -1.25rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section-our-team {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    // == SECTION OUR TEAM ==
+    .tab-team {
+        padding: 1.875rem !important;
     }
 }
