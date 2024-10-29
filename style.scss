@@ -316,8 +316,41 @@ body {
         }
     }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .plans-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
 
+        .plan-card {
+            height: unset !important;
+        }
+
+        .plan-card--left {
+            height: 90% !important;
+        }
+
+        .plan-card--right {
+            grid-column: span 2;
+            justify-self: center;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .plans-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 767px) {
+    // == SECTION OUR PRICING ==
+    .section-our-pricing {
+        margin: 2.1875rem 0;
+
+        .plan-card {
+            padding: 1.875rem !important;
+        }
+    }
+
     // ==  CTA SECTION ==
     .cta-section {
         padding: 2.5rem;
