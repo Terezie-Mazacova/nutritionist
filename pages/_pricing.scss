@@ -1,3 +1,4 @@
+// == SECTION TABLE PLAN ==
 .table-wrapper {
     background-color: $green-95;
     border: 1px solid $green-85;
@@ -217,6 +218,39 @@
     }
 }
 
+
+@media screen and (max-width: 767px) {
+    // == SECTION FAQ ==
+    .section-faq {
+        margin-bottom: 2.1875rem;
+
+        .faq-container {
+            padding: 1.875rem !important;
+        }
+
+        .ask-card {
+            padding: 3.125rem 1.5rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // == SECTION FAQ ==
+    .header-faq {
+        margin-bottom: 3.125rem !important;
+    }
+    .faq-and-question-section {
+        flex-direction: column;
+
+        .faq-container {
+            width: 100% !important;
+        }
+
+        .ask-card {
+            width: 100% !important;
+        }
+    }
+}
 
 
 

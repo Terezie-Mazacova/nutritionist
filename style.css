@@ -1397,6 +1397,31 @@
   color: #262626;
 }
 
+@media screen and (max-width: 767px) {
+  .section-faq {
+    margin-bottom: 2.1875rem;
+  }
+  .section-faq .faq-container {
+    padding: 1.875rem !important;
+  }
+  .section-faq .ask-card {
+    padding: 3.125rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-faq {
+    margin-bottom: 3.125rem !important;
+  }
+  .faq-and-question-section {
+    flex-direction: column;
+  }
+  .faq-and-question-section .faq-container {
+    width: 100% !important;
+  }
+  .faq-and-question-section .ask-card {
+    width: 100% !important;
+  }
+}
 .section-filter-blogs {
   margin-bottom: 9.375rem;
 }
