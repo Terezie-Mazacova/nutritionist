@@ -113,6 +113,9 @@
 
         img {
             width: 100%;
+            border-bottom-right-radius: 3.125rem;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -153,7 +156,8 @@
             font-weight: 500;
             color: $grey-20;
             line-height: 150%;
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
+            max-width: 47.4375rem;
         }
 
         .cta-btns {
@@ -315,6 +319,16 @@
         padding: 0 1rem !important;
     }
 
+    // == HERO FOR HOME PAGE ==
+    .content-section {
+        padding: 0 1rem !important;
+
+        .cta-btns {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
     // == HERO FOR SUBPAGE ABOUT ==
     .header-information-about {
         padding: 0 1rem;
@@ -334,7 +348,6 @@
     .header-information {
         padding: 0 1rem;
 
-
         .header-info-container {
             padding: 1.875rem;
             margin-top: 35px;
@@ -346,6 +359,11 @@
     // == HEADER ==
     .header-container {
         padding: 0 2rem !important;
+    }
+
+    // == HERO FOR HOME PAGE ==
+    .content-section {
+        padding: 2rem 2rem 0 2rem !important;
     }
 
     // == HERO FOR SUBPAGE ABOUT ==
@@ -363,6 +381,44 @@
 
         .header-info-container {
             padding: 5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // == HERO FOR HOME PAGE ==
+    .intro-section {
+        flex-direction: column;
+
+        .hero-image {
+            width: 100%;
+
+            img {
+                border-bottom-left-radius: 3.125rem;
+            }
+        }
+
+        .content-section {
+            width: 100%;
+            padding-right: 0;
+            align-items: center;
+            text-align: center;
+
+            .intro-lead {
+                @include text-medium-large;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            h1 {
+                max-width: unset;
+            }
+
+            .cta-btns {
+                margin-bottom: 3.125rem;
+            }
         }
     }
 }
