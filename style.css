@@ -304,6 +304,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .content-section .testimonial {
+    flex-direction: column;
+  }
   .header-information-about {
     padding: 0 1rem;
     gap: 3.125rem;
