@@ -1837,6 +1837,9 @@ body {
   margin: 9.375rem 0;
 }
 .section-our-pricing .pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 5rem;
 }
@@ -1857,6 +1860,9 @@ body {
   font-weight: 500;
   line-height: 150%;
   color: #333333;
+}
+.section-our-pricing .pricing-header .pricing-tab-text {
+  max-width: 62.25rem;
 }
 .section-our-pricing .tabs-pricing [data-tab-content] {
   display: none;
@@ -2002,6 +2008,10 @@ body {
   height: 3%;
 }
 
+.home-our-pricing {
+  margin: 13rem 0 9.375rem 0;
+}
+
 .cta-section {
   position: relative;
   padding: 5rem;
@@ -2068,6 +2078,9 @@ body {
   }
   .section-our-pricing .plan-card {
     padding: 1.875rem !important;
+  }
+  .home-our-pricing {
+    margin-top: 9.375rem;
   }
   .cta-section {
     padding: 2.5rem;
