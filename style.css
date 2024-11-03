@@ -799,6 +799,26 @@
   color: #333333;
 }
 
+@media screen and (max-width: 767px) {
+  .section-features {
+    margin-top: 2.1875rem;
+  }
+  .section-features .feature-card {
+    padding: 1.875rem !important;
+  }
+  .section-features .feature-card h3 {
+    font-size: 1.375rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .features-header {
+    margin-bottom: 3.125rem !important;
+  }
+  .features-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+}
 .section-our-story {
   margin-bottom: 9.375rem;
 }
