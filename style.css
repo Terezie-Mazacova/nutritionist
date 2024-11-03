@@ -574,6 +574,11 @@
   padding: 1.875rem 2.5rem;
   background-color: #F6FBE9;
   border-top: 1px solid #EEF8D3;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.slide-content .slide-author-info img {
+  border-radius: 0.5rem;
 }
 .slide-content .slide-author-info .slide-author-name {
   font-size: 1.125rem;
@@ -613,6 +618,47 @@
   left: 43%;
 }
 
+@media screen and (max-width: 576px) {
+  .splide__pagination {
+    bottom: -70px;
+  }
+  .splide__arrow--next {
+    right: 0;
+  }
+  .splide__arrow--prev {
+    left: 0;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .splide__arrow--next {
+    right: 30%;
+  }
+  .splide__arrow--prev {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .splide__pagination {
+    bottom: -70px;
+  }
+  .splide__arrow--next {
+    right: 30%;
+  }
+  .splide__arrow--prev {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .splide__pagination {
+    bottom: -65px;
+  }
+  .splide__arrow--next {
+    right: 40%;
+  }
+  .splide__arrow--prev {
+    left: 40%;
+  }
+}
 .section-features {
   margin-top: 9.375rem;
 }
@@ -820,11 +866,14 @@
     font-size: 1.375rem !important;
   }
   .section-our-blogs {
-    margin-top: 2.1875rem;
+    margin-top: 2.1875rem !important;
   }
   .section-our-blogs h3 {
     font-size: 1.375rem !important;
     margin-bottom: 1.125rem !important;
+  }
+  .section-our-testimonials {
+    margin-top: 2.1875rem;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -843,6 +892,9 @@
   }
   .blogs-list .blogs-card {
     padding: 1.5rem !important;
+  }
+  .testimonials-header {
+    margin-bottom: 3.125rem !important;
   }
 }
 .section-our-story {
@@ -2112,6 +2164,9 @@ body {
   }
 }
 @media screen and (max-width: 1023px) {
+  .pricing-header {
+    margin-bottom: 3.125rem !important;
+  }
   .plans-wrapper {
     flex-direction: column;
     align-items: center;

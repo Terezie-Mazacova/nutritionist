@@ -29,6 +29,12 @@
         padding: 1.875rem 2.5rem;
         background-color: $green-95;
         border-top: 1px solid $green-90;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+
+        img {
+            border-radius: .5rem;
+        }
 
         .slide-author-name {
             @include text-medium;
@@ -68,4 +74,56 @@
 
 .splide__arrow--prev {
     left: 43%;
+}
+
+@media screen and (max-width: 576px) {
+    .splide__pagination {
+        bottom: -70px;
+    }
+
+    .splide__arrow--next {
+        right: 0;
+    }
+
+    .splide__arrow--prev {
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .splide__arrow--next {
+        right: 30%;
+    }
+
+    .splide__arrow--prev {
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .splide__pagination {
+        bottom: -70px;
+    }
+
+    .splide__arrow--next {
+        right: 30%;
+    }
+
+    .splide__arrow--prev {
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .splide__pagination {
+        bottom: -65px;
+    }
+
+    .splide__arrow--next {
+        right: 40%;
+    }
+
+    .splide__arrow--prev {
+        left: 40%;
+    }
 }
