@@ -710,6 +710,7 @@
 }
 .section-our-blogs .blogs-list .blogs-card .blogs-card-img {
   width: 100%;
+  border-radius: 0.625rem;
 }
 .section-our-blogs .blogs-list .blogs-card .blogs-container {
   margin-top: 2.5rem;
@@ -802,6 +803,12 @@
   color: #333333;
 }
 
+@media screen and (max-width: 576px) {
+  .blogs-author-info {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .section-features {
     margin-top: 2.1875rem;
@@ -812,6 +819,13 @@
   .section-features .feature-card h3 {
     font-size: 1.375rem !important;
   }
+  .section-our-blogs {
+    margin-top: 2.1875rem;
+  }
+  .section-our-blogs h3 {
+    font-size: 1.375rem !important;
+    margin-bottom: 1.125rem !important;
+  }
 }
 @media screen and (max-width: 1023px) {
   .features-header {
@@ -820,6 +834,15 @@
   .features-list {
     grid-template-columns: repeat(1, 1fr) !important;
     gap: 1.25rem !important;
+  }
+  .blogs-header {
+    margin-bottom: 3.125rem !important;
+  }
+  .blogs-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .blogs-list .blogs-card {
+    padding: 1.5rem !important;
   }
 }
 .section-our-story {
