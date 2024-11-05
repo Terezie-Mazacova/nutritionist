@@ -4,6 +4,10 @@
     flex-direction: column;
     background-color: $dark-green-15;
     //padding: 0 10.125rem; TEMPORARY
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 
     .header-container {
         max-width: 120rem;
@@ -107,6 +111,7 @@
 .intro-section {
     display: flex;
     gap: 3.125rem;
+    padding-top: 10.5625rem;
 
     .hero-image {
         width: 50%;
@@ -221,7 +226,7 @@
     gap: 6.25rem;
     padding: 0 10.125rem;
     max-width: 120rem;
-    margin: 6.25rem auto 9.375rem auto;
+    margin: 16.6875rem auto 9.375rem auto;
 
     .about-intro-content {
         padding: 6.25rem;
@@ -260,7 +265,7 @@
         padding: 6.25rem;
         background-color: $green-95;
         border: 1px solid $green-85;
-        margin-top: 6.25rem;
+        margin-top: 16.6875rem;
         position: relative;
         border-top-left-radius: .75rem;
         border-top-right-radius: .75rem;
@@ -338,7 +343,7 @@
     .header-information-about {
         padding: 0 1rem;
         gap: 3.125rem;
-        margin: 2.1875rem auto;
+        margin: 12.375rem auto 2.1875rem auto;
 
         .about-intro-content {
             padding: 1.875rem;
@@ -355,7 +360,7 @@
 
         .header-info-container {
             padding: 1.875rem;
-            margin-top: 35px;
+            margin-top: 13.625rem;
         }
     }
 }
@@ -367,9 +372,14 @@
     }
 
     // == HERO FOR HOME PAGE ==
-    .content-section {
-        padding: 2rem 2rem 0 2rem !important;
+    .intro-section {
+        padding-top: 10rem;
+
+        .content-section {
+            padding: 2rem 2rem 0 2rem !important;
+        }
     }
+    
 
     // == HERO FOR SUBPAGE ABOUT ==
     .header-information-about {
