@@ -55,7 +55,10 @@ body {
 
 // == SECTION OUR PRICING ==
 .section-our-pricing {
-    margin: 9.375rem 0;
+    margin: 9.375rem auto;
+    padding: 0 10.125rem;
+    max-width: 120rem;
+
 
     .pricing-header {
         display: flex;
@@ -334,6 +337,7 @@ body {
     // == SECTION OUR PRICING ==
     .section-our-pricing {
         margin: 2.1875rem 0;
+        padding: 0 1rem;
 
         .plan-card {
             padding: 1.875rem !important;

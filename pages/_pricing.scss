@@ -1,80 +1,89 @@
 // == SECTION TABLE PLAN ==
-.table-wrapper {
-    background-color: $green-95;
-    border: 1px solid $green-85;
-    border-radius: .75rem;
-    padding: 3.125rem;
-    margin-bottom: 9.375rem;
+.table-container {
+    padding: 0 10.125rem;
+    max-width: 120rem;
+    margin: 0 auto;
 
-    .pricing-table {
-        width: 100%;
-        border-collapse: separate;
-
-        .table-header {
-            th {
-                background-color: $dark-green-20;
-                padding: 20px 30px;
-                border-radius: .5rem;
-                color: #fff;
-                @include text-medium-large;
-                font-weight: 500;
-                line-height: 150%;
-                border-spacing: 0 50px;
+    .table-wrapper {
+        background-color: $green-95;
+        border: 1px solid $green-85;
+        border-radius: .75rem;
+        padding: 3.125rem;
+        margin-bottom: 9.375rem;
+        overflow-x: auto;
+        max-width: 100%;
+    
+        .pricing-table {
+            width: 100%;
+            border-collapse: separate;
+    
+            .table-header {
+                th {
+                    background-color: $dark-green-20;
+                    padding: 20px 30px;
+                    border-radius: .5rem;
+                    color: #fff;
+                    @include text-medium-large;
+                    font-weight: 500;
+                    line-height: 150%;
+                    border-spacing: 0 50px;
+                }
             }
-        }
-        
-        td {
-            padding: 3.125rem 0;
-            border-bottom: 1px solid $green-80;
-            border-right: 1px solid $green-80;
-
-            &.no-border-right {
-                border-right: none;
-            }
-
-            &.no-border-right-bottom {
-                border-right: none; 
-                border-bottom: none;
-            }
-
-            &.no-border-center {
-                border-bottom: none;
-            }
-        }
-
-        .feature-name {
-            @include text-large;
-            font-weight: 500;
-            line-height: 152%;
-            color: $grey-15;
-        }
-
-        .feature-title {
-            text-align: left;
-        }
-
-        .icon-center {
-            text-align: center;
             
-            .bi-check-lg {
-                background-color: $green-70;
-                padding: .5rem;
-                border-radius: .5rem;
+            td {
+                padding: 3.125rem 1.875rem;
+                border-bottom: 1px solid $green-80;
+                border-right: 1px solid $green-80;
+    
+                &.no-border-right {
+                    border-right: none;
+                }
+    
+                &.no-border-right-bottom {
+                    border-right: none; 
+                    border-bottom: none;
+                }
+    
+                &.no-border-center {
+                    border-bottom: none;
+                }
             }
-
-            .bi-x {
-                background-color: $green-90;
-                padding: .5rem;
-                border-radius: .5rem;
+    
+            .feature-name {
+                @include text-large;
+                font-weight: 500;
+                line-height: 152%;
+                color: $grey-15;
+            }
+    
+            .feature-title {
+                text-align: left;
+            }
+    
+            .icon-center {
+                text-align: center;
+                
+                .bi-check-lg {
+                    background-color: $green-70;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                }
+    
+                .bi-x {
+                    background-color: $green-90;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                }
             }
         }
     }
 }
 
 
+
 // == SECTION FAQ ==
 .section-faq {
-    margin-bottom: 9.375rem;
+    margin: 0 auto 9.375rem auto !important;
 
     .header-faq {
         display: flex;
@@ -220,6 +229,30 @@
 
 
 @media screen and (max-width: 767px) {
+    // == SECTION TABLE PLAN ==
+    .table-container {
+        padding-left: 1rem;
+        padding-right: 0;
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 2.1875rem !important;
+
+            &::-webkit-scrollbar {
+                height: 6px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: $green-70;
+                border-radius: 27px;
+            }
+
+            .pricing-table {
+                min-width: 900px;
+            }
+        }
+    }
+
     // == SECTION FAQ ==
     .section-faq {
         margin-bottom: 2.1875rem;
@@ -231,6 +264,12 @@
         .ask-card {
             padding: 3.125rem 1.5rem !important;
         }
+    }
+}
+@media screen and (max-width: 800px) {
+    // == SECTION TABLE PLAN ==
+    .table-wrapper {
+        padding: 1.875rem !important;
     }
 }
 
@@ -249,6 +288,13 @@
         .ask-card {
             width: 100% !important;
         }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    // == SECTION TABLE PLAN ==
+    .table-container {
+        padding: 0 2rem;
     }
 }
 

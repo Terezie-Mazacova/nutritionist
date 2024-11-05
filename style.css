@@ -1355,18 +1355,25 @@
     margin-bottom: 9.375rem;
   }
 }
-.table-wrapper {
+.table-container {
+  padding: 0 10.125rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.table-container .table-wrapper {
   background-color: #F6FBE9;
   border: 1px solid #E5F5BD;
   border-radius: 0.75rem;
   padding: 3.125rem;
   margin-bottom: 9.375rem;
+  overflow-x: auto;
+  max-width: 100%;
 }
-.table-wrapper .pricing-table {
+.table-container .table-wrapper .pricing-table {
   width: 100%;
   border-collapse: separate;
 }
-.table-wrapper .pricing-table .table-header th {
+.table-container .table-wrapper .pricing-table .table-header th {
   background-color: #234338;
   padding: 20px 30px;
   border-radius: 0.5rem;
@@ -1376,46 +1383,46 @@
   line-height: 150%;
   border-spacing: 0 50px;
 }
-.table-wrapper .pricing-table td {
-  padding: 3.125rem 0;
+.table-container .table-wrapper .pricing-table td {
+  padding: 3.125rem 1.875rem;
   border-bottom: 1px solid #DCF1A7;
   border-right: 1px solid #DCF1A7;
 }
-.table-wrapper .pricing-table td.no-border-right {
+.table-container .table-wrapper .pricing-table td.no-border-right {
   border-right: none;
 }
-.table-wrapper .pricing-table td.no-border-right-bottom {
+.table-container .table-wrapper .pricing-table td.no-border-right-bottom {
   border-right: none;
   border-bottom: none;
 }
-.table-wrapper .pricing-table td.no-border-center {
+.table-container .table-wrapper .pricing-table td.no-border-center {
   border-bottom: none;
 }
-.table-wrapper .pricing-table .feature-name {
+.table-container .table-wrapper .pricing-table .feature-name {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 152%;
   color: #262626;
 }
-.table-wrapper .pricing-table .feature-title {
+.table-container .table-wrapper .pricing-table .feature-title {
   text-align: left;
 }
-.table-wrapper .pricing-table .icon-center {
+.table-container .table-wrapper .pricing-table .icon-center {
   text-align: center;
 }
-.table-wrapper .pricing-table .icon-center .bi-check-lg {
+.table-container .table-wrapper .pricing-table .icon-center .bi-check-lg {
   background-color: #CBEA7B;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-.table-wrapper .pricing-table .icon-center .bi-x {
+.table-container .table-wrapper .pricing-table .icon-center .bi-x {
   background-color: #EEF8D3;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
 .section-faq {
-  margin-bottom: 9.375rem;
+  margin: 0 auto 9.375rem auto !important;
 }
 .section-faq .header-faq {
   display: flex;
@@ -1550,6 +1557,24 @@
 }
 
 @media screen and (max-width: 767px) {
+  .table-container {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+  .table-container .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2.1875rem !important;
+  }
+  .table-container .table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+  .table-container .table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #CBEA7B;
+    border-radius: 27px;
+  }
+  .table-container .table-wrapper .pricing-table {
+    min-width: 900px;
+  }
   .section-faq {
     margin-bottom: 2.1875rem;
   }
@@ -1558,6 +1583,11 @@
   }
   .section-faq .ask-card {
     padding: 3.125rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .table-wrapper {
+    padding: 1.875rem !important;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1572,6 +1602,11 @@
   }
   .faq-and-question-section .ask-card {
     width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .table-container {
+    padding: 0 2rem;
   }
 }
 .section-filter-blogs {
@@ -1886,7 +1921,9 @@ body {
 }
 
 .section-our-pricing {
-  margin: 9.375rem 0;
+  margin: 9.375rem auto;
+  padding: 0 10.125rem;
+  max-width: 120rem;
 }
 .section-our-pricing .pricing-header {
   display: flex;
@@ -2127,6 +2164,7 @@ body {
 @media screen and (max-width: 767px) {
   .section-our-pricing {
     margin: 2.1875rem 0;
+    padding: 0 1rem;
   }
   .section-our-pricing .plan-card {
     padding: 1.875rem !important;
