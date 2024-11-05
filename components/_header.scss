@@ -262,6 +262,8 @@
         border: 1px solid $green-85;
         margin-top: 6.25rem;
         position: relative;
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
 
         .header-abstract-design {
             position: absolute;
@@ -297,9 +299,8 @@
         }
     }
     
-    .header-info-team {
-        border-top-left-radius: .75rem;
-        border-top-right-radius: .75rem;
+    .header-info-container-radius {
+        border-radius: .75rem;
     }
 }
 

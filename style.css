@@ -247,6 +247,8 @@
   border: 1px solid #E5F5BD;
   margin-top: 6.25rem;
   position: relative;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 .header-information .header-info-container .header-abstract-design {
   position: absolute;
@@ -283,9 +285,8 @@
   line-height: 150%;
   color: #333333;
 }
-.header-information .header-info-team {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+.header-information .header-info-container-radius {
+  border-radius: 0.75rem;
 }
 
 @media screen and (max-width: 1279px) {
