@@ -11,6 +11,13 @@
         border-bottom-right-radius: .75rem;
         background-color: $dark-green-20;
         margin-bottom: 3.125rem;
+        overflow-x: auto;
+        max-width: 100%;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
 
         li {
             list-style-type: none;
@@ -22,20 +29,32 @@
             white-space: nowrap;
             cursor: pointer;
             border: 1px solid transparent;
+
+            &:hover,
+            &.active {
+                background-color: $dark-green-25;
+                border: 1px solid $dark-green-30;
+                border-radius: .5rem;
+                color: #fff;
+            }
         }
     }
 
     .filter-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background-color: $green-95;
-        border-radius: .75rem;
-        border: 1px solid $green-85;
-        gap: 0;
+        gap: 1.875rem;
 
         .post-card {
-            //border-right: 1px solid $green-85;
-            border-bottom: 1px solid $green-85;
+            border: 1px solid $green-85;
+            border-radius: .75rem;
+            background-color: $green-95;
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: inline-block;
+            }
         
             .category-label {
                 @include text-xlarge;
@@ -113,32 +132,14 @@
     }
 }
 
-article:nth-child(odd) .post-card {
-    border-right: 1px solid $green-85;
-}
-
-article:nth-child(even) .post-card {
-    border-right: none;
-}
-
-article:nth-last-child(-n+2) .post-card {
-    border-bottom: none !important;
-}
-
-.filtermenu li:hover,
-.filtermenu li.active {
-    background-color: $dark-green-25;
-    border: 1px solid $dark-green-30;
-    border-radius: .5rem;
-    color: #fff;
-}
-
+// == FOR JS ==
 .hidden {
     display: none;
 }
 
-.post-card:nth-child(1),
-.post-card:nth-child(2),
-.post-card:nth-child(3) {
-    display: inline-block;
+
+@media screen and (max-width: 1439px) {
+    .filtermenu {
+        padding: 1.875rem !important;
+    }
 }
