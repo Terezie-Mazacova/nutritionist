@@ -151,6 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
+
 // == SECTION OUR STORY AND BTN SHOW MORE ===
 document.addEventListener("DOMContentLoaded", function() {
     const showMoreBtn = document.querySelector('.show-more-btn');
