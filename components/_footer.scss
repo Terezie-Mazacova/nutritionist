@@ -8,7 +8,7 @@
         align-items: center;
         max-width: 120rem;
         margin: 0 auto;
-        padding: 0 162px;
+        padding: 0 10.125rem;
 
         .footer-nav {
             ul {
@@ -23,7 +23,7 @@
                         @include text-medium;
                         font-weight: 600;
                         line-height: 150%;
-                        color: #fff;
+                        color: $white;
 
                         &:hover {
                             color: $green-70;
@@ -39,7 +39,7 @@
             align-items: center;
             border: none;
             background-color: transparent;
-            color: #fff;
+            color: $white;
             @include text-medium;
             font-weight: 600;
             line-height: 150%;
@@ -48,12 +48,12 @@
             transition: transform 0.3s ease;
 
             &:hover .bi-arrow-up {
-                transform: translateY(-8px);
+                transform: translateY(-0.5rem);
             }
 
             .icon-arrow-scroll {
-                width: 62px;
-                height: 62px;
+                width: 3.875rem;
+                height: 3.875rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -71,7 +71,7 @@
     .footer-contact {
         max-width: 120rem;
         margin: 0 auto;
-        padding: 0 162px;
+        padding: 0 10.125rem;
 
         .footer-container {
             display: flex;
@@ -80,7 +80,7 @@
             margin-top: 3.125rem;
             padding: 1rem 1.875rem;
             background-color: $dark-green-20;
-            border: 1px solid $dark-green-25;
+            border: .0625rem solid $dark-green-25;
             border-radius: .5rem;
 
             .footer-contact-info {
@@ -89,7 +89,7 @@
                 
 
                 .contact-item {
-                    border: 1px solid $dark-green-25;
+                    border: .0625rem solid $dark-green-25;
                     border-radius: .375rem;
                     padding: .875rem;
 
@@ -102,7 +102,7 @@
                         @include text-medium;
                         line-height: 150%;
                         font-weight: 500;
-                        color: #fff;
+                        color: $white;
                         text-decoration: none;
                     }
                 }

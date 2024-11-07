@@ -28,14 +28,14 @@
             padding: .875rem 1.25rem;
             white-space: nowrap;
             cursor: pointer;
-            border: 1px solid transparent;
+            border: .0625rem solid transparent;
 
             &:hover,
             &.active {
                 background-color: $dark-green-25;
-                border: 1px solid $dark-green-30;
+                border: .0625rem solid $dark-green-30;
                 border-radius: .5rem;
-                color: #fff;
+                color: $white;
             }
         }
     }
@@ -46,7 +46,7 @@
         gap: 1.875rem;
 
         .post-card {
-            border: 1px solid $green-85;
+            border: .0625rem solid $green-85;
             border-radius: .75rem;
             background-color: $green-95;
 
@@ -63,12 +63,12 @@
                 color: $grey-20;
                 position: relative;
                 margin-bottom: 3.125rem;
-                padding: 50px 50px 0 50px;
+                padding: 3.125rem 3.125rem 0 3.125rem;
 
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: -10px;
+                    bottom: -0.625rem;
                     height: 0.1875rem;
                     background-color: $green-70;
                     width: 12.5rem;
@@ -80,11 +80,13 @@
             .post-image {
                 display: flex;
                 flex-direction: row-reverse;
-                border-bottom: 1px solid $green-85;
-                padding: 0 50px;
+                border-bottom: .0625rem solid $green-85;
+                padding: 0 3.125rem;
 
                 img {
                     width: 70%;
+                    border-top-left-radius: .75rem;
+                    border-top-right-radius: .75rem;
                 }
             }
 
@@ -143,11 +145,11 @@
 @media screen and (max-width: 576px) {
     // == SECTION FILTERMENU ==
     .category-label {
-        padding: 30px 30px 0 30px !important;
+        padding: 1.875rem 1.875rem 0 1.875rem !important;
     }
 
     .post-image {
-        padding: 0 30px !important;
+        padding: 0 1.875rem !important;
     }
 
     .text-button-wrapper {

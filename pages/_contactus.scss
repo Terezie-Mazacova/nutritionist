@@ -18,9 +18,9 @@
             gap: 1.25rem;
             padding: 1.875rem;
             background-color: $dark-green-20;
-            border: 1px solid $dark-green-25;
+            border: .0625rem solid $dark-green-25;
             border-radius: .5rem;
-            width: 325px;
+            width: 20.3125rem;
 
             i {
                 color: $green-70;
@@ -29,7 +29,7 @@
 
             a {
                 text-decoration: none;
-                color: #fff;
+                color: $white;
                 @include text-medium;
                 font-weight: 500;
                 line-height: 150%;
@@ -41,7 +41,7 @@
         display: flex;
         gap: 3.125rem;
         background-color: $green-95;
-        border: 1px solid $green-85;
+        border: .0625rem solid $green-85;
         border-radius: .75rem;
         padding: 5rem;
 
@@ -76,7 +76,7 @@
 
                     input, textarea {
                         background-color: $green-90;
-                        border: 1px solid $green-80;
+                        border: .0625rem solid $green-80;
                         border-radius: .5rem;
                         padding: 1.5rem;
                     }

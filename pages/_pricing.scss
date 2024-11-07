@@ -6,7 +6,7 @@
 
     .table-wrapper {
         background-color: $green-95;
-        border: 1px solid $green-85;
+        border: .0625rem solid $green-85;
         border-radius: .75rem;
         padding: 3.125rem;
         margin-bottom: 9.375rem;
@@ -20,20 +20,20 @@
             .table-header {
                 th {
                     background-color: $dark-green-20;
-                    padding: 20px 30px;
+                    padding: 1.25rem 1.875rem;
                     border-radius: .5rem;
-                    color: #fff;
+                    color: $white;
                     @include text-medium-large;
                     font-weight: 500;
                     line-height: 150%;
-                    border-spacing: 0 50px;
+                    border-spacing: 0 3.125rem;
                 }
             }
             
             td {
                 padding: 3.125rem 1.875rem;
-                border-bottom: 1px solid $green-80;
-                border-right: 1px solid $green-80;
+                border-bottom: .0625rem solid $green-80;
+                border-right: .0625rem solid $green-80;
     
                 &.no-border-right {
                     border-right: none;
@@ -113,13 +113,13 @@
 
         .faq-container {
             background-color: $green-95;
-            border: 1px solid $green-85;
+            border: .0625rem solid $green-85;
             border-radius: .75rem;
             padding: 3.75rem;
             width: 70%;
             
             .faq {
-                border-bottom: 1px solid $green-85;
+                border-bottom: .0625rem solid $green-85;
                 padding: 1.75rem 0;
                 position: relative;
                 overflow: hidden;
@@ -149,7 +149,7 @@
 
                 .faq-toggle {
                     background-color: $dark-green-20;
-                    color: #fff;
+                    color: $white;
                     border: none;
                     border-radius: .375rem;
                     cursor: pointer;
@@ -171,7 +171,7 @@
             }
 
             .faq.active .faq-toggle .bi-x {
-                color: #fff;
+                color: $white;
                 display: block;
             }
 
@@ -187,7 +187,7 @@
             text-align: center;
             padding: 5rem 1.875rem;
             background-color: $green-95;
-            border: 1px solid $green-85;
+            border: .0625rem solid $green-85;
             border-radius: .75rem;
             width: 30%;
             height: 3%;
@@ -239,16 +239,16 @@
             margin-bottom: 2.1875rem !important;
 
             &::-webkit-scrollbar {
-                height: 6px;
+                height: .375rem;
             }
         
             &::-webkit-scrollbar-thumb {
                 background-color: $green-70;
-                border-radius: 27px;
+                border-radius: 1.6875rem;
             }
 
             .pricing-table {
-                min-width: 900px;
+                min-width: 56.25rem;
             }
         }
     }

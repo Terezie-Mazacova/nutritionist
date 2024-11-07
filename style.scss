@@ -117,7 +117,7 @@ body {
                 &.active {
                     background-color: $dark-green-20;
                     border-radius: .375rem;
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
@@ -206,7 +206,7 @@ body {
                         @include text-medium;
                         font-weight: 500;
                         line-height: 150%;
-                        color: #fff;
+                        color: $white;
                         margin-bottom: 2.5rem;
                     }
                     
@@ -256,10 +256,6 @@ body {
 
                 .plan-card--center {
                     height: 2%;
-                }
-
-                .plan-card--right {
-                    height: 3%;
                 }
             }
         }

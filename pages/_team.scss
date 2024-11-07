@@ -36,16 +36,16 @@
                 line-height: 150%;
                 cursor: pointer;
                 white-space: nowrap;
-                border: 1px solid transparent;
+                border: .0625rem solid transparent;
                 padding: .875rem 1.25rem;
 
                 &:hover,
                 &.active {
                     padding: .875rem 1.25rem;
                     background-color: $dark-green-25;
-                    border: 1px solid $dark-green-30;
+                    border: .0625rem solid $dark-green-30;
                     border-radius: .5rem;
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
@@ -66,9 +66,9 @@
 
                     .team-member-info {
                         position: absolute;
-                        bottom: -60px;
+                        bottom: -3.75rem;
                         background-color: $green-95;
-                        border-top-right-radius: 20px;
+                        border-top-right-radius: 1.25rem;
                         padding: 1.875rem;
                         max-width: 16.875rem;
 

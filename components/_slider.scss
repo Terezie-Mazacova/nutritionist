@@ -2,15 +2,15 @@
 .slide-content {
     display: flex;
     flex-direction: column;
-    border: 1px solid $green-90;
-    border-radius: 12px;
+    border: .0625rem solid $green-90;
+    border-radius: .75rem;
 
     .quote-content {
         padding: 2.5rem;
         
         .bi-quote {
             color: $dark-green-30;
-            font-size: 40px;
+            font-size: 2.5rem;
         }
 
         p {
@@ -25,12 +25,12 @@
     .slide-author-info {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: .75rem;
         padding: 1.875rem 2.5rem;
         background-color: $green-95;
-        border-top: 1px solid $green-90;
-        border-bottom-right-radius: 12px;
-        border-bottom-left-radius: 12px;
+        border-top: .0625rem solid $green-90;
+        border-bottom-right-radius: .75rem;
+        border-bottom-left-radius: .75rem;
 
         img {
             border-radius: .5rem;
@@ -46,7 +46,7 @@
 }
 
 .splide__pagination {
-    bottom: -60px;
+    bottom: -3.75rem;
 }
 
 .splide__pagination__page {
@@ -61,11 +61,11 @@
 .splide__arrow {
     top: 112.5% !important;
     background-color: $green-95;
-    border: 1px solid $green-90;
+    border: .0625rem solid $green-90;
     border-radius: .5rem;
-    width: 58px;
-    height: 58px;
-    padding: 12px;
+    width: 3.625rem;
+    height: 3.625rem;
+    padding: .75rem;
 }
 
 .splide__arrow--next {
@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 576px) {
     .splide__pagination {
-        bottom: -70px;
+        bottom: -4.375rem;
     }
 
     .splide__arrow--next {
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .splide__pagination {
-        bottom: -70px;
+        bottom: -4.375rem;
     }
 
     .splide__arrow--next {
@@ -116,7 +116,7 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
     .splide__pagination {
-        bottom: -65px;
+        bottom: -4.0625rem;
     }
 
     .splide__arrow--next {
