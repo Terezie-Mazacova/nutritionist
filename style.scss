@@ -329,15 +329,21 @@ body {
     }
 }
 
-
+// == BREAKPOINTY ==
 @media screen and (max-width: 767px) {
     // == SECTION OUR PRICING ==
     .section-our-pricing {
         margin: 2.1875rem 0;
         padding: 0 1rem;
 
-        .plan-card {
-            padding: 1.875rem !important;
+        .tabs-pricing {
+            .tabs-lists {
+                .plans-wrapper {
+                    .plan-card {
+                        padding: 1.875rem;
+                    }
+                }
+            }
         }
     }
 
@@ -362,7 +368,7 @@ body {
 
         .cta-container {
             flex-direction: column;
-            gap: 1.25rem !important;
+            gap: 1.25rem;
 
             .cta-text {
                 text-align: center;
@@ -377,15 +383,19 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .cta-container {
-        gap: 3.125rem !important;
+    .cta-section {
+        .cta-container {
+            gap: 3.125rem;
+        }
     }
 }
 
 @media screen and (max-width: 1023px) {
     // == SECTION OUR PRICING ==
-    .pricing-header {
-        margin-bottom: 3.125rem !important;
+    .home-our-pricing {
+        .pricing-header {
+            margin-bottom: 3.125rem;
+        }
     }
 
     .plans-wrapper {
@@ -396,21 +406,27 @@ body {
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     // == SECTION OUR PRICING ==
-    .plans-wrapper {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
-
-        .plan-card {
-            height: unset !important;
-        }
-
-        .plan-card--left {
-            height: 90% !important;
-        }
-
-        .plan-card--right {
-            grid-column: span 2;
-            justify-self: center;
+    .section-our-pricing {
+        .tabs-pricing {
+            .tabs-lists {
+                .plans-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+            
+                    .plan-card {
+                        height: unset;
+                    }
+            
+                    .plan-card--left {
+                        height: 90%;
+                    }
+            
+                    .plan-card--right {
+                        grid-column: span 2;
+                        justify-self: center;
+                    }
+                }
+            }
         }
     }
 }
