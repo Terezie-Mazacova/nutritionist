@@ -386,27 +386,35 @@
 
 
 @media screen and (max-width: 767px) {
-    // == HAMBURGER MENU == 
-    .mobile-nav {
-        width: 100% !important;
-    }
+    .section-header {
+        .header-wrapper {
+            // == HEADER ==
+            .header-container {
+                padding: 0 1rem;
 
-    // == HEADER ==
-    .header-container {
-        padding: 0 1rem !important;
-    }
-
-    // == HERO FOR HOME PAGE ==
-    .content-section {
-        padding: 0 1rem !important;
-
-        .cta-btns {
-            flex-direction: column;
-            width: 100%;
+                .logo-nav {
+                    // == HAMBURGER MENU == 
+                    .mobile-nav {
+                        width: 100%;
+                    }
+                }
+            }
         }
 
-        .testimonial {
-            flex-direction: column;
+        .intro-section {
+            // == HERO FOR HOME PAGE ==
+            .content-section {
+                padding: 0 1rem;
+
+                .cta-btns {
+                    flex-direction: column;
+                    width: 100%;
+                }
+
+                .testimonial {
+                    flex-direction: column;
+                }
+            }
         }
     }
 
@@ -437,20 +445,23 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    // == HEADER ==
-    .header-container {
-        padding: 0 2rem !important;
-    }
+    .section-header {
+        .header-wrapper {
+            // == HEADER ==
+            .header-container {
+                padding: 0 2rem;
+            }
+        }
 
-    // == HERO FOR HOME PAGE ==
-    .intro-section {
-        padding-top: 10rem;
+        // == HERO FOR HOME PAGE ==
+        .intro-section {
+            padding-top: 10rem;
 
-        .content-section {
-            padding: 2rem 2rem 0 2rem !important;
+            .content-section {
+                padding: 0 2rem;
+            }
         }
     }
-    
 
     // == HERO FOR SUBPAGE ABOUT ==
     .header-information-about {
@@ -510,18 +521,34 @@
 }
 
 @media screen and (max-width: 1279px) {
-    // == HEADER ==
-    .nav-button-wrapper {
-        display: none !important;
+    .section-header {
+        .header-wrapper {
+            .header-container {
+                .logo-nav {
+                    // == HEADER ==
+                    .nav-button-wrapper {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .hamburger {
-        display: none !important;
-    }
-
-    .mobile-nav {
-        display: none !important;
+    .section-header{
+        .header-wrapper {
+            .header-container {
+                .logo-nav {
+                    .hamburger {
+                        display: none;
+                    }
+                    
+                    .mobile-nav {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
