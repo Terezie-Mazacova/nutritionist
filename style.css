@@ -944,42 +944,42 @@
   .section-features {
     margin-top: 2.1875rem;
   }
-  .section-features .feature-card {
-    padding: 1.875rem !important;
+  .section-features .features-list .feature-card {
+    padding: 1.875rem;
   }
-  .section-features .feature-card h3 {
-    font-size: 1.375rem !important;
+  .section-features .features-list .feature-card .feature-card-header h3 {
+    font-size: 1.375rem;
   }
   .section-our-blogs {
-    margin-top: 2.1875rem !important;
+    margin-top: 2.1875rem;
   }
-  .section-our-blogs h3 {
-    font-size: 1.375rem !important;
-    margin-bottom: 1.125rem !important;
+  .section-our-blogs .blogs-list .blogs-card .blogs-container .blogs-content h3 {
+    font-size: 1.375rem;
+    margin-bottom: 1.125rem;
   }
   .section-our-testimonials {
     margin-top: 2.1875rem;
   }
 }
 @media screen and (max-width: 1023px) {
-  .features-header {
-    margin-bottom: 3.125rem !important;
+  .section-features .features-header {
+    margin-bottom: 3.125rem;
   }
-  .features-list {
-    grid-template-columns: repeat(1, 1fr) !important;
-    gap: 1.25rem !important;
+  .section-features .features-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
   }
-  .blogs-header {
-    margin-bottom: 3.125rem !important;
+  .section-our-blogs .blogs-header {
+    margin-bottom: 3.125rem;
   }
-  .blogs-list {
-    grid-template-columns: repeat(1, 1fr) !important;
+  .section-our-blogs .blogs-list {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .blogs-list .blogs-card {
-    padding: 1.5rem !important;
+  .section-our-blogs .blogs-list .blogs-card {
+    padding: 1.5rem;
   }
-  .testimonials-header {
-    margin-bottom: 3.125rem !important;
+  .section-our-testimonials .testimonials-header {
+    margin-bottom: 3.125rem;
   }
 }
 .section-our-story {

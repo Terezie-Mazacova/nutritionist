@@ -200,6 +200,8 @@
     }
 }
 
+
+// == BREAKPOINTY == 
 @media screen and (max-width: 576px) {
     .blogs-author-info {
         flex-direction: column;
@@ -213,24 +215,34 @@
     .section-features {
         margin-top: 2.1875rem;
 
-        .feature-card {
-            padding: 1.875rem !important;
-
-            h3 {
-                @include h3(1.375rem !important);
+        .features-list {
+            .feature-card {
+                padding: 1.875rem;
+    
+                .feature-card-header {
+                    h3 {
+                        @include h3(1.375rem);
+                    }
+                }
             }
         }
     }
 
-
     // == SECTION OUR BLOGS ==
     .section-our-blogs {
-        margin-top: 2.1875rem !important;
+        margin-top: 2.1875rem;
 
-
-        h3 {
-            @include h3(1.375rem !important);
-            margin-bottom: 1.125rem !important;
+        .blogs-list {
+            .blogs-card {
+                .blogs-container {
+                    .blogs-content {
+                        h3 {
+                            @include h3(1.375rem);
+                            margin-bottom: 1.125rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -242,32 +254,37 @@
 
 @media screen and (max-width: 1023px) {
     // == SECTION FEATURES ==
-    .features-header {
-        margin-bottom: 3.125rem !important;
+    .section-features {
+        .features-header {
+            margin-bottom: 3.125rem;
+        }
+
+        .features-list {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.25rem;
+        }
     }
 
-    .features-list {
-        grid-template-columns: repeat(1, 1fr) !important;
-        gap: 1.25rem !important;
-    }
-
-
-    // == SECTION OUR BLOGS == 
-    .blogs-header {
-        margin-bottom: 3.125rem !important;
-    }
-
-    .blogs-list {
-        grid-template-columns: repeat(1, 1fr) !important;
-
-        .blogs-card {
-            padding: 1.5rem !important;
+    // == SECTION OUR BLOGS ==
+    .section-our-blogs {
+        .blogs-header {
+            margin-bottom: 3.125rem;
+        }
+    
+        .blogs-list {
+            grid-template-columns: repeat(1, 1fr);
+    
+            .blogs-card {
+                padding: 1.5rem;
+            }
         }
     }
 
     // == SECTION OUR TESTIMONIALS ==
-    .testimonials-header {
-        margin-bottom: 3.125rem !important;
+    .section-our-testimonials {
+        .testimonials-header {
+            margin-bottom: 3.125rem;
+        }
     }
 }
 
