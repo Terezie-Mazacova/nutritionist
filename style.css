@@ -1168,11 +1168,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .achievements-cards .card {
-    padding: 1.875rem !important;
+  .section-company-achievements .achievements-cards .card {
+    padding: 1.875rem;
   }
-  .achievements-cards .card .card-header h3 {
-    font-size: 1.375rem !important;
+  .section-company-achievements .achievements-cards .card .card-header h3 {
+    font-size: 1.375rem;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1193,27 +1193,27 @@
     display: block;
   }
   .section-our-story .stories-container .story-item .story-img {
-    width: 100% !important;
+    width: 100%;
   }
   .section-our-story .stories-container .story-item .story-img .story-img--radius-tablet {
     border-top-right-radius: 0.75rem;
   }
   .section-our-story .stories-container .story-item .story-img .story-img--radius-bottom-right {
-    border-bottom-right-radius: 0 !important;
+    border-bottom-right-radius: 0;
   }
   .section-our-story .stories-container .story-item .story-text {
-    width: 100% !important;
-    padding: 1.875rem !important;
+    width: 100%;
+    padding: 1.875rem;
   }
   .section-our-story .stories-container .story-item .story-text h3 {
     font-size: 1.375rem;
   }
   .section-our-story .stories-container .story-item--left-side {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .section-our-story .stories-container .story-item--left-side .story-text--left-side {
-    text-align: left !important;
-    align-items: flex-start !important;
+    text-align: left;
+    align-items: flex-start;
   }
   .section-company-achievements {
     margin-bottom: 2.1875rem;
@@ -1226,8 +1226,8 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .show-more-container {
-    display: none !important;
+  .section-our-story .stories-container .show-more-container {
+    display: none;
   }
 }
 .section-our-team {
