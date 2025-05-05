@@ -1969,39 +1969,39 @@
   }
   .section-contactus .contactus-info {
     flex-direction: column;
-    padding: 1.875rem !important;
+    padding: 1.875rem;
   }
   .section-contactus .contactus-info .contact-method {
-    width: 100% !important;
-    padding: 1.25rem !important;
+    width: 100%;
+    padding: 1.25rem;
     text-align: center;
   }
   .section-contactus .contact-form-and-map {
     flex-direction: column;
-    padding: 1.875rem !important;
+    padding: 1.875rem;
   }
   .section-contactus .contact-form-and-map .contact-form-wrapper {
-    width: 100% !important;
+    width: 100%;
   }
-  .section-contactus .contact-form-and-map .contact-form-wrapper .row {
+  .section-contactus .contact-form-and-map .contact-form-wrapper .contact-form .row {
     flex-direction: column;
   }
-  .section-contactus .contact-form-and-map .contact-form-wrapper .row .group-name {
-    width: 100% !important;
+  .section-contactus .contact-form-and-map .contact-form-wrapper .contact-form .row .group-name {
+    width: 100%;
   }
-  .section-contactus .contact-form-and-map .contact-form-wrapper .input-group-mt {
-    margin-top: 1.25rem !important;
+  .section-contactus .contact-form-and-map .contact-form-wrapper .contact-form .input-group .input-group-mt {
+    margin-top: 1.25rem;
   }
   .section-contactus .contact-form-and-map .contact-map-and-icons {
-    width: 100% !important;
+    width: 100%;
   }
   .section-contactus .contact-form-and-map .contact-map-and-icons .contact-icons {
-    justify-content: center !important;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .contactus-info {
-    padding: 1.875rem !important;
+  .section-contactus .contactus-info {
+    padding: 1.875rem;
   }
 }
 *, *::before, *::after {

@@ -1,3 +1,4 @@
+// == SECTION CONTACT US ==
 .section-contactus {
     margin-bottom: 9.375rem;
 
@@ -134,7 +135,7 @@
     }
 }
 
-
+// == BREAKPOINTY ==
 @media screen and (max-width: 1023px) {
     // == SECTION CONTACT US ==
     .section-contactus {
@@ -142,40 +143,44 @@
 
         .contactus-info {
             flex-direction: column;
-            padding: 1.875rem !important;
+            padding: 1.875rem;
     
             .contact-method {
-                width: 100% !important;
-                padding: 1.25rem !important;
+                width: 100%;
+                padding: 1.25rem;
                 text-align: center;
             }
         }
     
         .contact-form-and-map {
             flex-direction: column;
-            padding: 1.875rem !important;
+            padding: 1.875rem;
     
             .contact-form-wrapper {
-                width: 100% !important;
-                
-                .row {
-                    flex-direction: column;
+                width: 100%;
 
-                    .group-name {
-                        width: 100% !important;
+                .contact-form {
+                    .row {
+                        flex-direction: column;
+    
+                        .group-name {
+                            width: 100%;
+                        }
                     }
-                    
-                }
-                .input-group-mt {
-                    margin-top: 1.25rem !important;
+
+                    .input-group {
+                        .input-group-mt {
+                            margin-top: 1.25rem;
+                        }
+                    }
                 }
             }
     
             .contact-map-and-icons {
-                width: 100% !important;
+                width: 100%;
     
                 .contact-icons {
-                    justify-content: center !important;
+                    justify-content: center;
                 }
             }
         }
@@ -183,8 +188,11 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    .contactus-info {
-        padding: 1.875rem !important;
+    // == SECTION CONTACT US ==
+    .section-contactus {
+        .contactus-info {
+            padding: 1.875rem;
+        }
     }
 }
 
