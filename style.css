@@ -1441,8 +1441,6 @@
   }
 }
 .table-container {
-  padding: 0 10.125rem;
-  max-width: 120rem;
   margin: 0 auto;
 }
 .table-container .table-wrapper {
@@ -1507,7 +1505,7 @@
 }
 
 .section-faq {
-  margin: 0 auto 9.375rem auto !important;
+  margin: 0 auto 9.375rem auto;
 }
 .section-faq .header-faq {
   display: flex;
@@ -1642,10 +1640,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .table-container {
-    padding-left: 1rem;
-    padding-right: 0;
-  }
   .table-container .table-wrapper {
     overflow-x: auto;
     margin-bottom: 2.1875rem;
@@ -1687,11 +1681,6 @@
   }
   .section-faq .faq-and-question-section .ask-card {
     width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .table-container {
-    padding: 0 2rem;
   }
 }
 .section-filter-blogs {
@@ -2033,8 +2022,6 @@ body {
 
 .section-our-pricing {
   margin: 9.375rem auto;
-  padding: 0 10.125rem;
-  max-width: 120rem;
 }
 .section-our-pricing .pricing-header {
   display: flex;
@@ -2272,7 +2259,6 @@ body {
 @media screen and (max-width: 767px) {
   .section-our-pricing {
     margin: 2.1875rem 0;
-    padding: 0 1rem;
   }
   .section-our-pricing .tabs-pricing .tabs-lists .plans-wrapper .plan-card {
     padding: 1.875rem;
