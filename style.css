@@ -1413,22 +1413,22 @@
 }
 
 @media screen and (max-width: 767px) {
-  .cards-works-container {
-    grid-template-columns: repeat(1, 1fr) !important;
+  .section-how-works .cards-works-container {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .cards-works-container .card-works {
-    padding: 1.875rem !important;
-    margin-bottom: 5rem !important;
+  .section-how-works .cards-works-container .card-works {
+    padding: 1.875rem;
+    margin-bottom: 5rem;
   }
-  .cards-works-container .card-works .card-number {
-    font-size: 5.9375rem !important;
-    top: -5rem !important;
+  .section-how-works .cards-works-container .card-works.card-works--last {
+    margin-bottom: 5rem;
   }
-  .cards-works-container .card-works:last-child {
-    margin-bottom: 0 !important;
+  .section-how-works .cards-works-container .card-works .card-number {
+    font-size: 5.9375rem;
+    top: -5rem;
   }
-  .cards-works-container .card-works h3 {
-    font-size: 1.375rem !important;
+  .section-how-works .cards-works-container .card-works h3 {
+    font-size: 1.375rem;
   }
 }
 @media screen and (max-width: 1023px) {
