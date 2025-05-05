@@ -228,7 +228,7 @@
     }
 }
 
-
+// == BREAKPOINTY ==
 @media screen and (max-width: 767px) {
     // == SECTION TABLE PLAN ==
     .table-container {
@@ -237,7 +237,7 @@
 
         .table-wrapper {
             overflow-x: auto;
-            margin-bottom: 2.1875rem !important;
+            margin-bottom: 2.1875rem;
 
             &::-webkit-scrollbar {
                 height: .375rem;
@@ -258,36 +258,43 @@
     .section-faq {
         margin-bottom: 2.1875rem;
 
-        .faq-container {
-            padding: 1.875rem !important;
-        }
-
-        .ask-card {
-            padding: 3.125rem 1.5rem !important;
+        .faq-and-question-section {
+            .faq-container {
+                padding: 1.875rem;
+            }
+    
+            .ask-card {
+                padding: 3.125rem 1.5rem;
+            }
         }
     }
 }
 @media screen and (max-width: 800px) {
     // == SECTION TABLE PLAN ==
-    .table-wrapper {
-        padding: 1.875rem !important;
+    .table-container {
+        .table-wrapper {
+            padding: 1.875rem;
+        }
     }
 }
 
 @media screen and (max-width: 1023px) {
     // == SECTION FAQ ==
-    .header-faq {
-        margin-bottom: 3.125rem !important;
-    }
-    .faq-and-question-section {
-        flex-direction: column;
-
-        .faq-container {
-            width: 100% !important;
+    .section-faq {
+        .header-faq {
+            margin-bottom: 3.125rem;
         }
 
-        .ask-card {
-            width: 100% !important;
+        .faq-and-question-section {
+            flex-direction: column;
+    
+            .faq-container {
+                width: 100%;
+            }
+    
+            .ask-card {
+                width: 100%;
+            }
         }
     }
 }
